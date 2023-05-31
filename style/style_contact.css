@@ -1,0 +1,161 @@
+/************************contact**************************/
+.contact{
+    background-color: var(--main_color2);
+    display: none;
+    display: flex;
+    flex-direction: column;
+}
+/***************title*********/
+.contact .title{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: var(--main_font);
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--main_font_color1);
+    height: 10%;
+}
+.contact .title::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-color: var(--main_color2);
+    animation: test 1s ease forwards;
+}
+/**************contain*****/
+.contact .contain{
+    position: relative;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+.contact .contain::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main_color2);
+    animation: contact_contain 2s ease forwards;
+    animation-delay: .1s;
+}
+@keyframes contact_contain{
+    100%{
+        width: 0%;
+    }
+}
+.contact .contain .cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact .contain .cards .card{
+    position: relative;
+    height: 350px;
+    width: 250px;
+    margin: 20px;
+    background-color: var(--main_color1);
+    border-radius: 20px;
+    border-style: solid;
+    border-color: transparent;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s ease;
+}
+.contact .contain .cards .card:hover{
+    transform: scale(1.1);
+}
+.contact .contain .cards .card span{
+    height: 50%;
+    width: 100%;
+    background-image: url(../icons/phone.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: transparent;
+}
+.contact .contain .cards .card .mail{
+    height: 50%;
+    width: 100%;
+    background-image: url(../icons/mail.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contact .contain .cards .card .title{
+    height: 20%;
+    font-size: 30px;
+    color: var(--main_font_color1);
+}
+.contact .contain .cards .card p{
+    height: 20%;
+    font-size: 20px;
+    color: var(--main_font_color3);
+}
+/**************footer*****/
+.contact .contact_icons{
+    position: relative;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+.contact .contact_icons::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main_color2);
+    animation: contact_icons 2s ease forwards;
+    animation-delay: 1s;
+}
+@keyframes contact_icons{
+    100%{
+        width: 0%;
+    }
+}
+.contact .contact_icons p{
+    height: 100%;
+    width: 400px;
+    font-family: var(--main_font);
+    font-size: 25px;
+    font-weight: 900;
+    color: var(--main_font_color3);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contact .contact_icons p a{
+    color: var(--main_font_color2);
+}
+.contact .contact_icons .media_logos{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contact .contact_icons .media_logos::after{
+    width: 0;
+}
+.contact .contact_icons .media_logos a{
+    height: 70%;
+}

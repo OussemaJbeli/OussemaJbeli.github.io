@@ -1,0 +1,188 @@
+.skils::-webkit-scrollbar{
+    width: 15px;
+    background-color: #ffc502;
+
+}
+.skils::-webkit-scrollbar-track{
+    border-radius: 25px;
+}
+.skils::-webkit-scrollbar-thumb{
+    border-radius: 25px;
+    background-color: #3476d3;
+}
+/**************************************************skils**************************/
+.skils{
+    background-color: var(--main_color2);
+    display: none;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/***************title*********/
+.skils .title{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: var(--main_font);
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--main_font_color1);
+}
+.skils .title::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-color: var(--main_color2);
+    transition: 0.4s ease;
+    animation: test 1s ease forwards;
+}
+/**************discription*****/
+.skils_panel .skils_disk{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform-origin: 0 0;
+    transform: rotateY(90deg);
+    border-style: solid;
+    border-radius: 10px;
+    border-color: transparent;
+}
+#paragraph_desc_desktop{
+    transform-origin: 100% 100%;
+}
+.skils_panel .skils_disk .skils_title{
+    height: 100px;
+    /* width: 500px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
+}
+.skils_panel .skils_disk .skils_title .icon{
+    width: 100px;
+    height: 100px;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.skils_panel .skils_disk .skils_title .icon_web{
+    background-image: url(../icons/web.png);
+}
+.skils_panel .skils_disk .skils_title .icon_desk{
+    background-image: url(../icons/desktop.png);
+}
+.skils_panel .skils_disk .skils_title .icon_media{
+    background-image: url(../icons/media_editing.png);
+}
+.skils_panel .skils_disk .skils_title .title{
+    height: 50px;
+    width: inherit;
+    font-family: var(--main_font);
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--main_font_color2);
+    text-transform: uppercase;
+}
+.skils_panel .skils_disk  .paragraph_desc{
+    width: 80%;
+    font-family: var(--main_font);
+    font-size: 20px;
+    font-weight: 900;
+    color: #b3b3b3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/**************skils***********/
+.skils_panel .skils_element{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(120%);
+}
+#skils_element{
+    transform: translateX(-120%);
+}
+.tagcloud {
+    font-family:var(--main_font);
+    font-size: 20px;
+    width: 800px;
+    height: 800px;
+    background-color: var(--main_color1);
+    border-radius: 400px;
+    box-shadow: 15px 3px 30px var(--main_color1);
+}
+#skils_words_decktop .tagcloud {
+    box-shadow: -15px 3px 30px var(--main_color1);
+}
+  /* Change color of each text in sphere on hover   */
+.tagcloud--item:hover {
+    color: var(--main_font_color3) ;
+}
+.second_skils_model{
+    display: none;
+}
+/*********************************************web panel*******************/
+.skils_panel_web,.skils_panel_media{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px;
+}
+/*********************************************desktop panel***************/
+.skils_panel_desktop{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 30px;
+}
+/*********animation*******/
+@keyframes opne_disk{
+    0%{
+        transform: rotateY(90deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+@keyframes opne_boll{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-160%);
+    }
+}
+/**/
+@keyframes opne_disk2{
+    0%{
+        transform: rotateY(90deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+@keyframes opne_boll2{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(160%);
+    }
+}

@@ -1,0 +1,156 @@
+/************************profile**************************/
+.profile{
+    background-color: var(--main_color2);
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* title */
+.profile .title{
+    position: relative;
+    height: 20%;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.profile .title::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-color: var(--main_color2);
+    transition: 0.4s ease;
+    animation: test 1s ease forwards;
+}
+.profile .title p{
+    font-family: var(--main_font);
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--main_font_color3);
+}
+.profile .title .me{
+    color: var(--main_font_color1);
+}
+/* profile info */
+.profile .discription{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+/*pictur*/
+.profile .discription .picture{
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: var(--main_color3);
+    box-shadow: 0px 16px 20px 0px var(--main_color1);
+}
+@keyframes fly_icon{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-15%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+} 
+/*discription*/
+.profile .discription p{
+    font-family: var(--main_font);
+    font-weight: 900;
+}
+.profile .multitext_profile{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: var(--main_font_color1);
+}
+.profile .discription .paragraph_desc{
+    position: relative;
+    height: 20%;
+    width: 80%;
+    font-size: 24px;
+    color:#c8c8c8;
+}
+.profile .discription .paragraph_desc::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-color: var(--main_color2);
+    transition: 0.4s ease;
+    animation: test 1s ease forwards;
+    animation-delay: .9s;
+}
+.profile .discription .buttons{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile .discription .buttons a{
+    width: 200px;
+    height: 50%;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: var(--main_color1);
+    background-color: var(--main_color2);
+    font-family: var(--main_font);
+    font-weight: 900;
+    color: var(--main_font_color3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+}
+.buttons a::before{
+    content: "";
+    position: relative;
+    top: 50%;
+    left: 10%;
+    width: 20px;
+    height: 5px;
+    background-color: var(--main_color1);
+    transition: 0.4s ease;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: transparent;
+}
+.buttons a::after{
+    content: "";
+    position: relative;
+    top: -50%;
+    left: -10%;
+    width: 20px;
+    height: 5px;
+    background-color: var(--main_color1);
+    transition: 0.4s ease;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: transparent;
+}
+.buttons a:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--main_color1);
+}
+.buttons a:hover::before{
+    left: 60%;
+}
+.buttons a:hover::after{
+    left: -60%;
+}

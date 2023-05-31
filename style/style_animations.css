@@ -1,0 +1,51 @@
+@keyframes zoomout{
+    100%{
+        transform: translate3d(0,0,-40px);
+    }
+}
+@keyframes zoomin{
+    100%{
+        transform: translate3d(0,0,0);
+    }
+}
+/****load****/
+@keyframes translateopen_load{
+    100%{
+        transform: translateX(100%);
+    }
+}
+@keyframes translateclose_load{
+    100%{
+        transform: translateX(100%);
+    }
+}
+/****panel****/
+@keyframes translateclose_panel{
+    0%{
+        transform: translate3d(0,0,-40px);
+    }
+    100%{
+        transform: translate3d(150%,0,-40px);
+    }
+}
+@keyframes translateopen_panel{
+    100%{
+        transform: translate3d(100%,0,-40px);
+    }
+}
+/***open home***/
+@keyframes test{
+    100%{
+        width: 0%;
+        left: 100%;
+    }
+}
+/****load page***/
+@keyframes anime{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}

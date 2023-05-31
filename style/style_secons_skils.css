@@ -1,0 +1,29 @@
+    .skill {
+        margin-bottom: 20px;
+    }
+    
+    .skill h3 {
+        margin: 0;
+        font-size: 18px;
+    }
+    
+    .skill-bar {
+        width: 300px;
+        background-color: lightgray;
+        height: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .skill-progress {
+        height: 100%;
+        background-color: var(--main_font_color1);
+        animation: skillAnimation 2s ease-in-out;
+    }
+    
+    @keyframes skillAnimation {
+        0% {
+        width: 0%;
+        }
+    }
+    
