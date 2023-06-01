@@ -392,7 +392,7 @@
     .contact .contact_icons .media_logos a{
         height: 50%;
     }
-    #github,#linkedin,#youtub,#twiter{
+    #github_contact,#linkedin_contact,#youtub_contact,#twiter_contact{
         height: 40%;
         margin: 5px;
     }
@@ -407,7 +407,10 @@
 }
 @media (max-width:450px){
     .frame{
-        height: 80%;
+        height: 85%;
+    }
+    #project{
+        height: 75%;
     }
     /* *********home */
     .nav_bar ul{
@@ -440,12 +443,13 @@
         font-size: 25px;
     }
     .profile .discription .paragraph_desc{
-        font-size: 17px;
-        font-weight: 600;
-        height: 40%;
+        font-size: 18px;
+        font-weight: 500;
+        height: 35%;
+        width: 95%;
     }
     .profile .discription .paragraph_desc::after{
-        height: 95%;
+        height: 100%;
     }
     /*********skils***/
     .skils_panel_web,.skils_panel_media{
@@ -461,9 +465,12 @@
     .skils_panel .skils_disk .skils_title .title{
         font-size: 18px;
         height: 20%;
+        text-align: center;
     }
     .skils_panel .skils_disk  .paragraph_desc{
         font-size: 16px;
+        font-weight: 500;
+        width: 90%;
     }
     .second_skils_model .skill h3{
         font-family: var(--main_font);
@@ -488,8 +495,9 @@
     .contact .contact_icons .media_logos a{
         height: 50%;
     }
-    #github,#linkedin,#youtub,#twiter{
-        height: 40%;
+    #github_contact,#linkedin_contact,#youtub_contact,#twiter_contact{
+        height: 50px;
+        width: 50px;
         margin: 5px;
     }
     .contact .contain .cards .card{

@@ -153,6 +153,50 @@
     flex-direction: row;
     align-items: center;
 }
+#linkedin_contact{
+    background-image: url(../icons/linkedin.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.4s ease;
+}
+#linkedin_contact:hover{
+    transform: translateY(-10px);
+}
+#github_contact{
+    background-image: url(../icons/githhub.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.4s ease;
+}
+#github_contact:hover{
+    transform: translateY(-10px);
+}
+#youtub_contact{
+    background-image: url(../icons/youtub.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.4s ease;
+}
+#youtub_contact:hover{
+    transform: translateY(-10px);
+}
+#twiter_contact{
+    background-image: url(../icons/twiter.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.4s ease;
+}
+#twiter_contact:hover{
+    transform: translateY(-10px);
+}
+#github_contact,#linkedin_contact,#youtub_contact,#twiter_contact{
+    height: 60%;
+    width: 60%;
+}
 .contact .contact_icons .media_logos::after{
     width: 0;
 }
