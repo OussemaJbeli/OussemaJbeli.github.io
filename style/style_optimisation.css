@@ -398,7 +398,12 @@
     }
 }
 @media (max-width:550px){
-    /*****contain***/
+    /******project**/
+    .project .contain .panel_projects .projects_title{
+        height: 50px;
+        font-size: 25px;
+    }
+    /*****contact***/
     .contact .contain .cards .card{
         height: 150px;
         width: 250px;
@@ -407,7 +412,7 @@
 }
 @media (max-width:450px){
     .frame{
-        height: 85%;
+        height: 80%;
     }
     #project{
         height: 75%;
@@ -477,6 +482,21 @@
         color: var(--main_font_color2);
         font-size: 16px;
     }
+    /******project**/
+    .project .contain .card{
+        width: 250px;
+        height: 200px;
+    }
+    .project .contain .card .trans_hiegth{
+        position: relative;
+        width: 250px;
+        height: 400px;
+        transition: .4s ease;
+    }
+    .project .contain .card .trans_hiegth .more{
+        width: 250px;
+        height: 200px;
+    }
     /*****contain***/
     .contact .title{
         font-size: 35px;
@@ -532,5 +552,22 @@
     }
     .second_skils_model .skill .skill-bar{
         width: 220px;
+    }
+    /******project**/
+    .project .contain .panel_projects .projects_title{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .project .contain .card{
+        width: 240px;
+        height: 160px;
+    }
+    .project .contain .card .trans_hiegth{
+        width: 240px;
+        height: 320px;
+    }
+    .project .contain .card .trans_hiegth .more{
+        width: 240px;
+        height: 160px;
     }
 }

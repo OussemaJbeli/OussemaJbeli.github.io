@@ -132,11 +132,6 @@ body{
     background-color: var(--main_color2);
     display: flex;
 }
-/************************profile**************************/
-.project{
-    background-color: #56933a;
-    display: none;
-}
 /***********details**************/
 .details{
     position: relative;

@@ -1,0 +1,146 @@
+.project::-webkit-scrollbar{
+    width: 15px;
+    background-color: #ffc502;
+
+}
+.project::-webkit-scrollbar-track{
+    border-radius: 25px;
+}
+.project::-webkit-scrollbar-thumb{
+    border-radius: 25px;
+    background-color: #3476d3;
+}
+/**************************************************profile********************************/
+.project{
+    background-color: var(--main_color2);
+    display: none;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/***************title*********/
+.project .title{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: var(--main_font);
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--main_font_color1);
+}
+.project .title::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-color: var(--main_color2);
+    transition: 0.4s ease;
+    animation: test 1s ease forwards;
+}
+/********************** contain */
+.project .contain{
+    width: 90%;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/**************general cards*/
+.project .contain .panel_projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.project .contain .panel_projects .projects_title{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main_font);
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--main_font_color3);
+    background-color: var(--main_color1);
+    border-radius: 20px 20px 0 0;
+    border-style: solid;
+    border-color: var(--main_color3) var(--main_color3) transparent;
+}
+.project .contain .panel_projects .cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--main_color1);
+    border-style: solid;
+    border-radius: 20px;
+    border-color: var(--main_color3);
+}
+.project .contain .card{
+    width: 320px;
+    height: 220px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: transparent;
+    overflow: hidden;
+}
+.project .contain .card .trans_hiegth{
+    position: relative;
+    width: 320px;
+    height: 440px;
+    transition: .4s ease;
+}
+.project .contain .card .trans_hiegth:hover{
+    height: 0px;
+}
+.project .contain .card .trans_hiegth img{
+    position: absolute;
+    width: 120%;
+    left: -10%;
+}
+.project .contain .card .trans_hiegth .more{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 320px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.project .contain .card .trans_hiegth .more h1{
+    font-family: var(--main_font);
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--main_font_color3);
+}
+.project .contain .card .trans_hiegth .more a{
+    width: 40px;
+    height: 40px;
+    background-image: url(../icons/see_more.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: transparent;
+    background-color: #fff;
+    transition: .4s ease;
+}
+.project .contain .card .trans_hiegth .more a:hover{
+    transform: scale(1.1);
+}
+.project .contain .cards .trans_hiegth .more{
+    background-image: linear-gradient(#0e6ab170,#082366 70%);
+}
