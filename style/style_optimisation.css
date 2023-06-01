@@ -187,6 +187,16 @@
             transform: translateX(100%);
         }
     }
+    .project .contain .panel_projects .ender_panel_projects{
+        flex-direction: column-reverse;
+    }
+    .project .contain .panel_projects .ender_panel_projects .cards{
+        width: 100%;
+    }
+    .project .contain .panel_projects .ender_panel_projects .logo{
+        width: 100%;
+        height: 300px;
+    }
     /**contact**/
     .contact .contain .cards .card{
         height: 300px;
@@ -523,6 +533,9 @@
     .contact .contain .cards .card{
         height: 150px;
         width: 250px;
+    }
+    .project .contain .panel_projects .ender_panel_projects .logo{
+        display: none;
     }
 }
 @media (max-width:370px){
