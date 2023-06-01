@@ -495,17 +495,17 @@
     /******project**/
     .project .contain .card{
         width: 250px;
-        height: 200px;
+        height: 170px;
     }
     .project .contain .card .trans_hiegth{
         position: relative;
         width: 250px;
-        height: 400px;
+        height: 340px;
         transition: .4s ease;
     }
     .project .contain .card .trans_hiegth .more{
         width: 250px;
-        height: 200px;
+        height: 170px;
     }
     /*****contain***/
     .contact .title{
@@ -572,15 +572,22 @@
         font-weight: 700;
     }
     .project .contain .card{
-        width: 240px;
-        height: 160px;
+        width: 200px;
+        height: 130px;
     }
     .project .contain .card .trans_hiegth{
-        width: 240px;
-        height: 320px;
+        width: 200px;
+        height: 260px;
     }
     .project .contain .card .trans_hiegth .more{
-        width: 240px;
-        height: 160px;
+        width: 200px;
+        height: 130px;
+    }
+    .project .contain .card .trans_hiegth .more h1{
+        font-size: 15px;
+    }
+    .project .contain .card .trans_hiegth .more a{
+        width: 30px;
+        height: 30px;
     }
 }

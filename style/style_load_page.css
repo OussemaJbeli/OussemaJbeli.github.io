@@ -28,6 +28,6 @@ h2::before{
     width: 100%;
     color: var(--main_color3);
     overflow: hidden;
-    border-bottom: 16px solid var(--main_color3);
+    border-bottom: 16px solid var(--main_color1);
     animation: anime 1s linear alternate;
 }

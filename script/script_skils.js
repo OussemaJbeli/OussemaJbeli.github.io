@@ -12,7 +12,7 @@ let test1_opne=0;let test2_opne=0;let value ;
 setInterval(() => {
     web.style.animation="opne_disk 2s ease forwards";
     web_skils.style.animation="opne_boll 2s ease forwards";
-}, 5000);
+}, 6000);
 
 skils_panel.addEventListener("scroll",scroll_pan);
 function scroll_pan(){
