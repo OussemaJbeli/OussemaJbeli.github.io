@@ -1,56 +1,110 @@
+.profile .profile_frame::-webkit-scrollbar{
+    width: 15px;
+}
 /************************profile**************************/
 .profile{
-    background-color: var(--main_color2);
     display: none;
     flex-direction: column;
     justify-content: space-around;
-}
-/* title */
-.profile .title{
-    position: relative;
-    height: 20%;
-    width: 250px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.profile .title::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200%;
-    background-color: var(--main_color2);
-    transition: 0.4s ease;
-    animation: test 1s ease forwards;
-}
-.profile .title p{
-    font-family: var(--main_font);
-    font-size: 48px;
-    font-weight: 900;
-    color: var(--main_font_color3);
-}
-.profile .title .me{
-    color: var(--main_font_color1);
-}
-/* profile info */
-.profile .discription{
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    background-image: url(../icons/bg_home/bg_home_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.profile_corner1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../icons/profile/profile_corner1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(-18%,-60%) rotateZ(-20deg);
+    animation: profile_corner1_animation 4s  ease infinite;
+}
+.profile_corner2{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background-image: url(../icons/profile/profile_corner2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(-15%,90%) rotateZ(20deg);
+    animation: profile_corner2_animation 4s  ease infinite;
+}
+/*********************frame-scroll_panel***********************/
+.profile .profile_frame{
+    top: 0;
+    left: 25%;
+    z-index: 1;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #ffffff00;
+}
+.profile .profile_frame p{
+    width: 100%;
+    height: 70%;
+}
+.key{
+    position: absolute;
+    top: 40%;
+    left: 95%;
+    height: 40px;
+    width: 40px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: var(--main_color1);
+    background-color: var(--main_color1);
+    background-size: 40px 100%;
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+    animation: key_animation 2s ease infinite;
+    cursor: pointer;
+}
+#scroll_down{
+    background-image: url(../icons/profile/key.png);
+}
+#scroll_up{
+    background-image: url(../icons/profile/key\ 2.png);
+}
+/*******************face**************************/
+.profile .face{
+    z-index: -1;
+    left: 0%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    transition: .4s ease;
+}
+/************about_me********************/
+#about_me{
+    top: 10%;
+    transform: rotateZ(0deg);
+    transform-origin: 0 50%;
 }
 /*pictur*/
-.profile .discription .picture{
-    height: 200px;
-    width: 200px;
+.face .picture{
+    height: 300px;
+    width: 300px;
     border-style: solid;
     border-radius: 50%;
     border-color: transparent;
-    background-color: var(--main_color3);
+    background-color: var(--main_color2);
     box-shadow: 0px 16px 20px 0px var(--main_color1);
+    margin-right: 20px;
+    background-image: url(../icons/profile/about_me.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 @keyframes fly_icon{
     0%{
@@ -63,96 +117,134 @@
         transform: translateY(0%);
     }
 } 
-/*discription*/
-.profile .discription p{
-    font-family: var(--main_font);
-    font-weight: 900;
+/* profile info */
+.profile .discription{
+    height: 50%;
+    width: 50%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }
-.profile .multitext_profile{
+/* title */
+#about_me .title{
+    position: relative;
     height: 20%;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#about_me .title p{
+    font-family: var(--main_font);
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--main_font_color2);
+}
+#about_me .title .me{
+    color: var(--main_font_color1);
+}
+/*discription*/
+.profile .discription .under_disq{
+    height: 80%;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+}
+.profile .discription .under_disq p{
+    font-family: var(--main_font);
+}
+.profile .discription .under_disq .multitext_profile{
+    width: 100%;
+    height: 5%;
     font-size: 32px;
     color: var(--main_font_color1);
 }
 .profile .discription .paragraph_desc{
     position: relative;
-    height: 20%;
-    width: 80%;
+    width: 90%;
+    height: 60%;
     font-size: 24px;
-    color:#c8c8c8;
-    text-align: center;
-    font-weight: 700;
+    color:var(--main_font_color2);
+    display: flex;
+    align-items: center;
 }
-.profile .discription .paragraph_desc::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200%;
-    background-color: var(--main_color2);
-    transition: 0.4s ease;
-    animation: test 1s ease forwards;
-    animation-delay: .9s;
-}
-.profile .discription .buttons{
+.profile .discription .under_disq .buttons{
     height: 20%;
+    display: block;
+}
+.profile .discription .under_disq .buttons a{
+    height: 100%;
+}
+/************experience******************/
+#experience{
+    top: 80%;
+    transform-origin: 0 0;
+    transform: rotateZ(45deg) translateY(0);
+}
+/*pictur*/
+#experience .picture{
+    height: 300px;
+    width: 300px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: var(--main_color2);
+    box-shadow: 0px 16px 20px 0px var(--main_color1);
+    margin-right: 20px;
+    background-image: url(../icons/profile/education.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fly_icon 4s ease infinite;
+}
+#experience .title{
+    font-size: 45px;
+    color: var(--main_font_color1);
+    height: 20%;
+    font-weight: 900;
+}
+#experience .paragraph_desc{
+    height: 20%;
+}
+#experience .cards{
+    height: 60%;
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
-.profile .discription .buttons a{
-    width: 200px;
-    height: 50%;
-    border-radius: 25px;
-    border-style: solid;
-    border-color: var(--main_color1);
+#experience .cards .card{
+    height: 200px;
+    width: 150px;
     background-color: var(--main_color2);
-    font-family: var(--main_font);
-    font-weight: 900;
-    color: var(--main_font_color3);
+    margin-right: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--main_color1);
+    transition: 0.4s ease;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     transition: 0.4s ease;
 }
-.buttons a::before{
-    content: "";
-    position: relative;
-    top: 50%;
-    left: 10%;
-    width: 20px;
-    height: 5px;
-    background-color: var(--main_color1);
-    transition: 0.4s ease;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: transparent;
+#experience .cards .card p{
+    font-size: 16px;
+    color: var(--main_font_color2);
+    font-family: var(--main_font);
+    height: 60%;
+    text-align: center;
 }
-.buttons a::after{
-    content: "";
-    position: relative;
-    top: -50%;
-    left: -10%;
-    width: 20px;
-    height: 5px;
-    background-color: var(--main_color1);
-    transition: 0.4s ease;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: transparent;
+#experience .cards .card .year{
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--main_font_color1);
+    font-family: var(--main_font);
+    height: 20%;
 }
-.buttons a:hover{
+#experience .cards .card:hover{
     transform: scale(1.1);
-    box-shadow: 0 0 20px var(--main_color1);
-}
-.buttons a:hover::before{
-    left: 60%;
-}
-.buttons a:hover::after{
-    left: -60%;
+    box-shadow: 0 10px 10px 0 var(--main_color1);
 }

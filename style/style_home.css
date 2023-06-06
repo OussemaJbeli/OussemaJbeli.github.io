@@ -10,20 +10,20 @@ li{
 }
 :root{
     --main_color1:#ffc502;
-    --main_color2:#070c2a;
-    --main_color3:#3476d3;
-    --main_color4:#ffffff;
+    --main_color2:#120e80;
+    --main_color3:#ffffff;
+    
     --main_font:sans-serif;
-    --main_font_color1:#3476d3;
-    --main_font_color2:#ffc502;
-    --main_font_color3:#ffffff;
-    --main_font_color4:#05091d;
+
+    --main_font_color1:#ffc502;
+    --main_font_color2:#fff;
+    --main_font_color3:#120e80;
 }
 body{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image: linear-gradient(#05091e 45%,var(--main_color3));
+    background-color: #edf1fd;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,12 +49,15 @@ body{
 }
 .nav_bar li{
     position: relative;
-    height: 80%;
-    width: 5%;
+    height: 35px;
+    width: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 0.4s ease;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .nav_bar li::before{
     content: '';
@@ -72,48 +75,34 @@ body{
     left: 0;
 }
 #home{
-    background-image: url(../icons/home_open.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url(../icons/nav_bar/home_open.png);
 }
 #profile{
-    background-image: url(../icons/profile_close.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url(../icons/nav_bar/profile_close.png);
 }
 #skils{
-    background-image: url(../icons/skils_close.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url(../icons/nav_bar/skils_close.png);
 }
 #project{
-    background-image: url(../icons/project_close.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 7%;
+    background-image: url(../icons/nav_bar/project_close.png);
+    background-size: 120% 150%;
+    width: 40px;
 }
 #contact{
-    background-image: url(../icons/contact_close.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url(../icons/nav_bar/contact_close.png);
 }
 /***************************frame************************/
 .frame{
     position: relative;
     width: 90%;
     height: 90%;
-    box-shadow: 0px 0px 30px #000;
     border-style:solid;
     border-radius: 30px;
-    border-color: transparent;
+    border-width: 0;
     transform-style:preserve-3d ;
     perspective: 300px;
     overflow: hidden;
+    background-color: #0a0c3b;
 }
 .panel{
     position: absolute;
@@ -124,13 +113,48 @@ body{
     align-items: center;
     border-style:solid;
     border-radius: 30px;
-    border-color: transparent;
+    border-width: 0;
+    overflow: hidden;
+    background-image: url(../icons/bg_home/bg_home_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 /************************home**************************/
 .home{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     left: 0;
-    background-color: var(--main_color2);
+    background-image: url(../icons/bg_home/bg_home_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
+}
+.corner1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../icons/bg_home/1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    transform:translate(50px,-50px);
+    animation:corner1_animation 10s ease infinite;
+}
+.corner2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../icons/bg_home/2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    transform:translate(-50px,50px);
+    animation:corner2_animation 10s ease infinite;
 }
 /***********details**************/
 .details{
@@ -140,7 +164,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    padding-left: 5%;
 }
 /*******disk*****/
 .discription{
@@ -153,21 +178,21 @@ body{
 .hello{
     position: relative;
     font-family: var(--main_font);
-    font-size: 32px;
-    color: var(--main_font_color3);
+    font-size: 35px;
+    color: var(--main_font_color2);
 }
 .Im{
     position: relative;
     font-family: var(--main_font);
-    font-size: 48px;
+    font-size: 50px;
     font-weight: 900;
-    color: var(--main_font_color3);
+    color: var(--main_font_color2);
 }
 .multitext{
     position: relative;
     height: 20%;
     font-family: var(--main_font);
-    font-size: 64px;
+    font-size: 68px;
     font-weight: 900;
     font-family: var(--main_font);
     color: var(--main_font_color1);
@@ -175,10 +200,10 @@ body{
 /*******buttons*****/
 .buttons{
     position: relative;
-    width: 60%;
+    width: 50%;
     height: 20%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .buttons a{
@@ -190,7 +215,7 @@ body{
     background-color: var(--main_color2);
     font-family: var(--main_font);
     font-weight: 600;
-    color: var(--main_font_color3);
+    color: var(--main_font_color2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -234,60 +259,38 @@ body{
 }
 /******midea_contact**/
 .media_logos{
-    position: relative;
-    width: 100%;
-    height: 10%;
+    width: 275px;
+    height: 20%;
     display: flex;
     flex-direction: row;
-    padding-left: 20%;
+    align-items: center;
+}
+.media_logos a{
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.4s ease;
+}
+.media_logos a:hover{
+    transform: translateY(-10px);
 }
 #linkedin{
-    width: 60px;
-    height: 50%;
-    background-image: url(../icons/linkedin.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 0.4s ease;
+    background-image: url(../icons/media_icons/linkedin.png);
 }
-#linkedin:hover{
-    transform: translateY(-10px);
+#facebook{
+    background-image: url(../icons/media_icons/fecebook.png);
 }
 #github{
-    width: 60px;
-    height: 50%;
-    background-image: url(../icons/githhub.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 0.4s ease;
-}
-#github:hover{
-    transform: translateY(-10px);
+    background-image: url(../icons/media_icons/github.png);
 }
 #youtub{
-    width: 60px;
-    height: 50%;
-    background-image: url(../icons/youtub.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 0.4s ease;
-}
-#youtub:hover{
-    transform: translateY(-10px);
+    background-image: url(../icons/media_icons/youtub.png);
 }
 #twiter{
-    width: 60px;
-    height: 50%;
-    background-image: url(../icons/twiter.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 0.4s ease;
-}
-#twiter:hover{
-    transform: translateY(-10px);
+    background-image: url(../icons/media_icons/twiter.png);
 }
 /***********pictur***************/
 .pictur_panel{
@@ -300,99 +303,12 @@ body{
 }
 .pictur_panel .icon{
     position: relative;
-    width: 250px;
-    height: 40%;
+    width: 300px;
+    height: 300px;
     top: 0;
     left: 70%;
     border-radius: 20px;
     border-width: 0px;
     background-color: var(--main_color2);
     box-shadow: 0px 25px 20px 0px var(--main_color1);
-}
-@keyframes open_icon{
-    0%{
-        top: 0;
-        left: 80%;
-        transform: rotateY(0deg)
-    }
-    50%{
-        top: -15%;
-    }
-    100%{
-        top: 0;
-        left: 0%;
-        transform: rotateY(360deg)
-    }
-}
-@keyframes fly_icon{
-    0%{
-        transform: translateY(0%);
-    }
-    50%{
-        transform: translateY(-15%);
-    }
-    100%{
-        transform: translateY(0%);
-    }
-} 
-/* animation */
-.hello::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--main_color2);
-    transition: 0.4s ease;
-    animation: test 2s ease forwards;
-    animation-delay: 0.3s;
-}
-.Im::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--main_color2);
-    transition: 0.4s ease;
-    animation: test 2s ease forwards;
-    animation-delay: .6s;
-}
-.multitext::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200%;
-    background-color: var(--main_color2);
-    transition: 0.4s ease;
-    animation: test 2s ease forwards;
-    animation-delay: .9s;
-}
-.buttons::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80%;
-    background-color: var(--main_color2);
-    transition: 0.4s ease;
-    animation: test 2s ease forwards;
-    animation-delay: 1s;
-}
-.media_logos::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 10%;
-    width: 50%;
-    height: 100%;
-    background-color: var(--main_color2);
-    transition: 0.4s ease;
-    animation: test 2s ease forwards;
-    animation-delay: 1.3s;
 }

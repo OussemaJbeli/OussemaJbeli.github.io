@@ -1,148 +1,226 @@
-.project::-webkit-scrollbar{
-    width: 15px;
-    background-color: #ffc502;
-
-}
-.project::-webkit-scrollbar-track{
-    border-radius: 25px;
-}
-.project::-webkit-scrollbar-thumb{
-    border-radius: 25px;
-    background-color: #3476d3;
-}
-
 .ender_panel_projects .cards::-webkit-scrollbar{
     width: 15px;
-    background-color: #ffc502;
-
+    border-radius: 25px;
 }
 .ender_panel_projects .cards::-webkit-scrollbar-track{
-    border-radius: 25px;
+    background-color: var(--main_color2);
+    border-radius: 0 30px 30px 0;
 }
 .ender_panel_projects .cards::-webkit-scrollbar-thumb{
-    border-radius: 25px;
-    background-color: #3476d3;
+    border-radius: 0 30px 30px 0;
+    background-color: var(--main_color1);
 }
-/**************************************************profile********************************/
+/**************************************************project********************************/
 .project{
-    background-color: var(--main_color2);
     display: none;
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: hidden;
+    position: absolute;
 }
-/***************title*********/
-.project .title{
-    position: relative;
-    height: 100px;
+/********************** contain */
+.project .contain{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: var(--main_font);
-    font-size: 48px;
-    font-weight: 900;
-    color: var(--main_font_color1);
+    height: 100%;
+    z-index: -1;
 }
-.project .title::after{
-    content: "";
+#key_prog{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    z-index: 999;
+}
+.project .contain .panel_projects{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 200%;
-    background-color: var(--main_color2);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    transform-origin: 100% 0%;
     transition: 0.4s ease;
-    animation: test 1s ease forwards;
 }
-/********************** contain */
-.project .contain{
-    width: 90%;
-    margin: 50px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/****web****/
+.contain .web_panel{
+    transform: rotateZ(0deg);
 }
-/**************general cards*/
-.project .contain .panel_projects{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 70px;
+/****desc****/
+.contain .desktop_panel{
+    transform: rotateZ(-90deg);
 }
-.project .contain .panel_projects .projects_title{
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+/****media****/
+.contain .media_panel{
+    transform: rotateZ(-180deg);
+}
+/**************title*******/
+.web_panel .corner_projects{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vw;
+    transform-origin: 50% 50%;
+    transform: rotateZ(0deg) translate(50%,-50%);
+    background-image: url(../icons/prjects/test.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.4s ease;
+    z-index: -1;
+} 
+.web_panel .corner_projects .projects_title{
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
+#projects_title1{
+    top: 50%;
+    left: 0;
+}
+#projects_title2{
+    top: 0%;
+    left: 50%;
+}
+#projects_title3{
+    top: -100%;
+    left: 50%;
+}
+.project .corner_projects .logo_img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+}
+/******web*****/
+#projects_title1 .logo_img{
+    background-image: url(../icons/prjects/web.png);
+    top: 2%;
+    left: 78%;
+    transform: rotateZ(45deg);
+}
+/******desktop*****/
+#projects_title2 .logo_img{
+    background-image: url(../icons/prjects/desktop.png);
+    top: 2%;
+    left: 2%;
+    transform: rotateZ(-45deg);
+}
+/******media*****/
+#projects_title3 .logo_img{
+    background-image: url(../icons/prjects/media_editing.png);
+    top: 78%;
+    left: 2%;
+    transform: rotateZ(-90deg);
+}
+.corner_projects p{
+    position: relative;
+    top: 0;
+    left: 25%;
+    height: 75%;
+    width: 75%;
     font-family: var(--main_font);
-    font-size: 38px;
+    font-size: 50px;
     font-weight: 700;
     color: var(--main_font_color2);
+    text-align: center;
 }
+#projects_title1 p{
+    left: 10%;
+    top: -5%;
+    transform: rotateZ(45deg);
+}
+#projects_title2 p{
+    left: 15%;
+    top: -5%;
+    transform: rotateZ(-45deg);
+}
+#projects_title3 p{
+    left: 15%;
+    top: -10%;
+    transform: rotateZ(-135deg);
+}
+/**************************projects******************/
 .project .contain .panel_projects .ender_panel_projects{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+}
+.project .contain .panel_projects .ender_panel_projects .cards{
+    width: 95%;
+    height: 80%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: var(--main_color1);
+    background-color: var(--main_color2);
+    box-shadow: 10px 13px 20px 0px #232302;
+}
+.project .contain .panel_projects .ender_panel_projects a{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: var(--main_color1);
+    font-size: 15px;
+    font-weight: 900;
+    font-family: var(--main_font);
+    color: var(--main_font_color3);
+    text-transform: uppercase;
+    transition: 0.4s ease;
+    background-color: var(--main_color1);
+}
+.project .contain .panel_projects .ender_panel_projects a:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 0 var(--main_color1);
+}
+.project .contain .card{
+    width: 350px;
+    height: 200px;
+    margin: 10px;
     border-style: solid;
     border-radius: 20px;
     border-color: var(--main_color1);
     overflow: hidden;
 }
-.project .contain .panel_projects .ender_panel_projects .cards{
-    width: 60%;
-    height: 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: var(--main_color1);
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-.project .contain .panel_projects .ender_panel_projects .logo{
-    width: 550px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.project .contain .panel_projects .ender_panel_projects .logo .logo_img{
-    animation: fly_projects 4s ease infinite;
-}
-.project .contain .card{
-    width: 320px;
-    height: 220px;
-    margin: 10px;
-    border-style: solid;
-    border-radius: 20px;
-    border-color: transparent;
-    overflow: hidden;
-}
 .project .contain .card .trans_hiegth{
     position: relative;
-    width: 320px;
-    height: 440px;
+    width: 350px;
+    height: 400px;
     transition: .4s ease;
 }
 .project .contain .card .trans_hiegth:hover{
     height: 0px;
 }
 .project .contain .card .trans_hiegth img{
+    width: 350px;
+    height: 200px;
     position: absolute;
-    width: 120%;
-    left: -10%;
 }
 .project .contain .card .trans_hiegth .more{
     position: absolute;
     top: 50%;
     left: 0;
-    width: 320px;
-    height: 220px;
+    width: 350px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -150,14 +228,14 @@
 }
 .project .contain .card .trans_hiegth .more h1{
     font-family: var(--main_font);
-    font-size: 30px;
-    font-weight: 900;
-    color: var(--main_font_color3);
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--main_font_color2);
 }
 .project .contain .card .trans_hiegth .more a{
     width: 40px;
     height: 40px;
-    background-image: url(../icons/see_more.png);
+    background-image: url(../icons/prjects/see_more.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -171,47 +249,19 @@
     transform: scale(1.1);
 }
 .project .contain .cards .trans_hiegth .more{
-    background-image: linear-gradient(#0e6ab170,#082366 70%);
+    background-image: linear-gradient(#b1b10e70,var(--main_color1) 70%);
 }
-/******web*****/
-.project .contain .web_panel .ender_panel_projects .logo .logo_img{
-    width: 100%;
-    height: 100%;
-    background-image: url(../icons/projects_web.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+/****key_page***********/
+#previews_project1{
+    top: 90%;
+    left: 85%;
+    background-image: url(../icons/prjects/key.png);
 }
-/******desktop*****/
-.project .contain .desktop_panel .card_desktops{
-    flex-direction: row-reverse;
+#next_project2,#next_project1{
+    top: 90%;
+    background-image: url(../icons/prjects/key\ 2.png);
 }
-.project .contain .desktop_panel .ender_panel_projects .logo .logo_img{
-    width: 100%;
-    height: 100%;
-    background-image: url(../icons/projects_desktop.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-/******media*****/
-.project .contain .media_panel .ender_panel_projects .logo .logo_img{
-    width: 100%;
-    height: 100%;
-    background-image: url(../icons/media_project.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation: fly_projects 4s ease infinite;
-}
-@keyframes fly_projects{
-    0%{
-        transform: translateY(0%);
-    }
-    50%{
-        transform: translateY(-20px);
-    }
-    100%{
-        transform: translateY(0%);
-    }
+#previews_project2{
+    top: 90%;
+    background-image: url(../icons/prjects/key.png);
 }

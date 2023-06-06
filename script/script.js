@@ -22,11 +22,11 @@ function butt(butt){
     for(let i=0;i<=4;i++){
         if(tab[i]==butt){
             let icon = document.getElementById(butt);
-            icon.style.backgroundImage="url(../icons/"+butt+"_open.png)";
+            icon.style.backgroundImage="url(../icons/nav_bar/"+butt+"_open.png)";
         }
         else{
             let icon = document.getElementById(tab[i]);
-            icon.style.backgroundImage="url(../icons/"+tab[i]+"_close.png)";
+            icon.style.backgroundImage="url(../icons/nav_bar/"+tab[i]+"_close.png)";
         }
     }
 }

@@ -1,3 +1,4 @@
+/***************************load effect**********************/
 @keyframes zoomout{
     100%{
         transform: translate3d(0,0,-40px);
@@ -33,13 +34,6 @@
         transform: translate3d(100%,0,-40px);
     }
 }
-/***open home***/
-@keyframes test{
-    100%{
-        width: 0%;
-        left: 100%;
-    }
-}
 /****load page***/
 @keyframes anime{
     0%{
@@ -47,5 +41,160 @@
     }
     100%{
         width: 100%;
+    }
+}
+/*************************************home***********************/
+
+/*** home***/
+@keyframes test{
+    100%{
+        width: 0%;
+        left: 100%;
+    }
+}/*bg home*/
+@keyframes corner1_animation{
+    0%{
+        transform:translate(50px,-50px);
+    }
+    50%{
+        transform:translate(0px,0px);
+    }
+    100%{
+        transform:translate(50px,-50px);
+    }
+}
+@keyframes corner2_animation{
+    0%{
+        transform:translate(-50px,50px);
+    }
+    50%{
+        transform:translate(0px,0px);
+    }
+    100%{
+        transform:translate(-50px,50px);
+    }
+}
+/**pictur flying*/
+@keyframes open_icon{
+    0%{
+        top: 0;
+        left: 80%;
+        transform: rotateY(0deg)
+    }
+    50%{
+        top: -15%;
+    }
+    100%{
+        top: 0;
+        left: 0%;
+        transform: rotateY(360deg)
+    }
+}
+@keyframes fly_icon{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-15%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+} 
+/**********************profile************************/
+/*corner profile*/
+@keyframes profile_corner1_animation{
+    0%{
+        transform: translate(-18%,-60%) rotateZ(-20deg)
+    }
+    50%{
+        transform: translate(-18%,-62%) rotateZ(-22deg);
+    }   
+    100%{
+        transform: translate(-18%,-60%) rotateZ(-20deg)
+    }
+}
+@keyframes profile_corner2_animation{
+    0%{
+        transform: translate(-15%,90%) rotateZ(20deg);
+    }
+    50%{
+        transform: translate(-17%,95%) rotateZ(22deg);
+    }   
+    100%{
+        transform: translate(-15%,90%) rotateZ(20deg);
+    }
+}
+/**key profile**/
+@keyframes key_animation{
+    50%{
+        box-shadow: 0 0 10px 10px var(--main_color1);
+        transform: translateY(10px);
+    }
+}
+/***********************************************skils***************************/
+/**key skils**/
+@keyframes key_animation_left{
+    50%{
+        box-shadow: 0 0 10px 10px var(--main_color1);
+        transform: translateX(10px);
+    }
+}
+@keyframes key_animation_rigth{
+    50%{
+        box-shadow: 0 0 10px 10px var(--main_color1);
+        transform: translateX(-10px);
+    }
+}
+/*****ball skils*******/
+@keyframes opne_disk{
+    0%{
+        transform: rotateY(90deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+@keyframes opne_boll{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-160%);
+    }
+}
+/***corner*******/
+@keyframes skils_corner1_animation{
+    0%{
+        transform: translate(20%,70%) rotateZ(-30deg);
+    }
+    50%{
+        transform: translate(25%,72%) rotateZ(-30deg);
+    }
+    100%{
+        transform: translate(20%,70%) rotateZ(-30deg);
+    }
+}
+@keyframes skils_corner2_animation{
+    0%{
+        transform: translate(-20%,70%) rotateZ(30deg);
+    }
+    50%{
+        transform: translate(-25%,72%) rotateZ(30deg);
+    }
+    100%{
+        transform: translate(-20%,70%) rotateZ(30deg);
+    }
+}
+/**************projects***************************************************/
+@keyframes fly_projects{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0%);
     }
 }

@@ -19,16 +19,6 @@
     color: var(--main_font_color1);
     height: 10%;
 }
-.contact .title::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200%;
-    background-color: var(--main_color2);
-    animation: test 1s ease forwards;
-}
 /**************contain*****/
 .contact .contain{
     position: relative;
@@ -36,27 +26,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     transition: 0.4s ease;
     cursor: pointer;
 }
-.contact .contain::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: var(--main_color2);
-    animation: contact_contain 2s ease forwards;
-    animation-delay: .1s;
-}
-@keyframes contact_contain{
-    100%{
-        width: 0%;
-    }
-}
 .contact .contain .cards{
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -65,16 +41,16 @@
 }
 .contact .contain .cards .card{
     position: relative;
-    height: 350px;
-    width: 250px;
-    margin: 20px;
+    height: 50px;
+    width: 300px;
+    margin: 0 20px;
     background-color: var(--main_color1);
     border-radius: 20px;
     border-style: solid;
     border-color: transparent;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     transition: 0.4s ease;
 }
@@ -82,18 +58,19 @@
     transform: scale(1.1);
 }
 .contact .contain .cards .card span{
-    height: 50%;
-    width: 100%;
-    background-image: url(../icons/phone.png);
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    background-image: url(../icons/contact/phone.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border-color: transparent;
 }
 .contact .contain .cards .card .mail{
-    height: 50%;
-    width: 100%;
-    background-image: url(../icons/mail.png);
+    height: 30px;
+    width: 30px;
+    background-image: url(../icons/contact/mail.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -104,9 +81,64 @@
     color: var(--main_font_color1);
 }
 .contact .contain .cards .card p{
-    height: 20%;
     font-size: 20px;
-    color: var(--main_font_color3);
+    color: var(--main_font_color2);
+}
+.contact .contain form{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.contact .contain form .information{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact .contain form .information .holder{
+    width: 300px;
+    height: 50px;
+    margin: 20px 20px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: var(--main_color1);
+    background-color: var(--main_color2);
+    color: var(--main_font_color2);
+    outline: none;
+}
+.contact .contain form .text{
+    width: 640px;
+    height: 60%;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: var(--main_color1);
+    background-color: var(--main_color2);
+    color: var(--main_font_color2);
+    outline: none;
+}
+.contact .contain form .butt{
+    width: 150px;
+    height: 50px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: var(--main_color1);
+    background-color: var(--main_color1);
+    color: var(--main_font_color2);
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: .4S ease;
+}
+.contact .contain form .butt:hover{
+transform: scale(1.1);
 }
 /**************footer*****/
 .contact .contact_icons{
@@ -118,15 +150,6 @@
     flex-direction: row;
     align-items: center;
 }
-.contact .contact_icons::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: var(--main_color2);
-    animation: contact_icons 2s ease forwards;
-    animation-delay: 1s;
-}
 @keyframes contact_icons{
     100%{
         width: 0%;
@@ -137,69 +160,46 @@
     width: 400px;
     font-family: var(--main_font);
     font-size: 25px;
-    font-weight: 900;
-    color: var(--main_font_color3);
+    font-weight: 700;
+    color: var(--main_font_color2);
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 .contact .contact_icons p a{
-    color: var(--main_font_color2);
+    color: var(--main_font_color1);
 }
-.contact .contact_icons .media_logos{
-    width: 20%;
+.contact_media{
+    width: 275px;
     height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-#linkedin_contact{
-    background-image: url(../icons/linkedin.png);
-    background-size: contain;
+.contact_media a{
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     transition: 0.4s ease;
 }
-#linkedin_contact:hover{
+.contact_media a:hover{
     transform: translateY(-10px);
+}
+#linkedin_contact{
+    background-image: url(../icons/media_icons/linkedin.png);
+}
+#facebook_contact{
+    background-image: url(../icons/media_icons/fecebook.png);
 }
 #github_contact{
-    background-image: url(../icons/githhub.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 0.4s ease;
-}
-#github_contact:hover{
-    transform: translateY(-10px);
+    background-image: url(../icons/media_icons/github.png);
 }
 #youtub_contact{
-    background-image: url(../icons/youtub.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 0.4s ease;
-}
-#youtub_contact:hover{
-    transform: translateY(-10px);
+    background-image: url(../icons/media_icons/youtub.png);
 }
 #twiter_contact{
-    background-image: url(../icons/twiter.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 0.4s ease;
-}
-#twiter_contact:hover{
-    transform: translateY(-10px);
-}
-#github_contact,#linkedin_contact,#youtub_contact,#twiter_contact{
-    height: 60%;
-    width: 60%;
-}
-.contact .contact_icons .media_logos::after{
-    width: 0;
-}
-.contact .contact_icons .media_logos a{
-    height: 70%;
+    background-image: url(../icons/media_icons/twiter.png);
 }

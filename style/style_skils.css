@@ -1,119 +1,155 @@
-.skils::-webkit-scrollbar{
+.skils_panel::-webkit-scrollbar{
     width: 15px;
-    background-color: #ffc502;
-
-}
-.skils::-webkit-scrollbar-track{
     border-radius: 25px;
 }
-.skils::-webkit-scrollbar-thumb{
-    border-radius: 25px;
-    background-color: #3476d3;
+.skils_panel::-webkit-scrollbar-track{
+    background-color: var(--main_color2);
+    border-radius: 0 30px 30px 0;
+}
+.skils_panel::-webkit-scrollbar-thumb{
+    border-radius: 0 30px 30px 0;
+    background-color: var(--main_color1);
 }
 /**************************************************skils**************************/
 .skils{
-    background-color: var(--main_color2);
     display: none;
-    display: flex;
     flex-direction: column;
+}
+.skils_frame{
     overflow-y: scroll;
     overflow-x: hidden;
-}
-/***************title*********/
-.skils .title{
-    position: relative;
-    height: 100px;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: var(--main_font);
-    font-size: 48px;
-    font-weight: 900;
-    color: var(--main_font_color1);
-}
-.skils .title::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200%;
-    background-color: var(--main_color2);
-    transition: 0.4s ease;
-    animation: test 1s ease forwards;
-}
-/**************discription*****/
-.skils_panel .skils_disk{
-    width: 40%;
     height: 100%;
+}
+.skils_frame p{
+    width: 100%;
+    height: 100%;
+}
+.skils_corner1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../icons/skils/skils_corner1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(20%,70%) rotateZ(-30deg);
+    animation: skils_corner1_animation 4s  ease infinite;
+}
+.skils_corner2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../icons/skils/skils_corner2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(-20%,70%) rotateZ(30deg);
+    animation: skils_corner2_animation 4s  ease infinite;
+}
+/*************************************panel*******************************/
+.skils_panel{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 150%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    transform-origin: 0 0;
-    transform: rotateY(90deg);
-    border-style: solid;
-    border-radius: 10px;
-    border-color: transparent;
-}
-#paragraph_desc_desktop{
-    transform-origin: 100% 100%;
-}
-.skils_panel .skils_disk .skils_title{
-    height: 100px;
-    /* width: 500px; */
-    display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: start;
-    align-items: end;
+    transform-origin: 0% 100%;
+    transition: 0.4s ease;
 }
-.skils_panel .skils_disk .skils_title .icon{
-    width: 100px;
-    height: 100px;
+/**********panel************/
+.skils_panel_web{
+    z-index: -1;
+    transform-origin: 50% 100%;
+    transform:translateX(0%) rotateZ(0deg);
+}
+.skils_panel_desktop{
+    z-index: -1;
+    transform-origin: 50% 100%;
+    transform:translateX(50%) rotateZ(90deg);
+}
+.skils_panel_media{
+    z-index: -1;
+    transform-origin: 50% 100%;
+    transform:translateX(100%) rotateZ(90deg);
+}
+/***************title*********/
+.skils_panel .skils_title{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.skils_panel .skils_title .icon{
+    width: 110px;
+    height: 110px;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.skils_panel .skils_disk .skils_title .icon_web{
-    background-image: url(../icons/web.png);
+.skils_panel .skils_title .icon_web{
+    background-image: url(../icons/skils/web.png);
 }
-.skils_panel .skils_disk .skils_title .icon_desk{
-    background-image: url(../icons/desktop.png);
+.skils_panel .skils_title .icon_desk{
+    background-image: url(../icons/skils/desktop.png);
 }
-.skils_panel .skils_disk .skils_title .icon_media{
-    background-image: url(../icons/media_editing.png);
+.skils_panel .skils_title .icon_media{
+    background-image: url(../icons/skils/media_editing.png);
 }
-.skils_panel .skils_disk .skils_title .title{
+.skils_panel .skils_title .title{
     height: 50px;
     width: inherit;
     font-family: var(--main_font);
-    font-size: 28px;
+    font-size: 40px;
     font-weight: 900;
-    color: var(--main_font_color2);
+    color: var(--main_font_color1);
     text-transform: uppercase;
 }
-.skils_panel .skils_disk  .paragraph_desc{
+/*************next page************/
+#next,#next2{
+    top: 5%;
+    left: 95%;
+    background-image: url(../icons/skils/key\ 2.png);
+    animation: key_animation_left 2s ease infinite;
+}
+#previews,#previews1{
+    top: 5%;
+    left: 30px;
+    background-image: url(../icons/skils/key.png);
+    animation: key_animation_rigth 2s ease infinite;
+}
+/**************discription*****/
+.skils_panel .skils_disk{
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.skils_panel .skils_disk .paragraph_desc{
     width: 80%;
     font-family: var(--main_font);
     font-size: 20px;
-    font-weight: 900;
-    color: #b3b3b3;
+    color: var(--main_font_color2);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    transform-origin: 0 0;
+    transform: rotateY(90deg);
+    padding: 0 20% 0 0;
 }
 /**************skils***********/
-.skils_panel .skils_element{
+.skils_panel .skils_disk .skils_element{
     width: 45%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     transform: translateX(120%);
-}
-#skils_element{
-    transform: translateX(-120%);
 }
 .tagcloud {
     font-family:var(--main_font);
@@ -124,65 +160,10 @@
     border-radius: 400px;
     box-shadow: 15px 3px 30px var(--main_color1);
 }
-#skils_words_decktop .tagcloud {
-    box-shadow: -15px 3px 30px var(--main_color1);
-}
   /* Change color of each text in sphere on hover   */
 .tagcloud--item:hover {
     color: var(--main_font_color3) ;
 }
 .second_skils_model{
     display: none;
-}
-/*********************************************web panel*******************/
-.skils_panel_web,.skils_panel_media{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 30px;
-}
-/*********************************************desktop panel***************/
-.skils_panel_desktop{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    margin: 30px;
-}
-/*********animation*******/
-@keyframes opne_disk{
-    0%{
-        transform: rotateY(90deg);
-    }
-    100%{
-        transform: rotateY(0deg);
-    }
-}
-@keyframes opne_boll{
-    0%{
-        transform: translateX(100%);
-    }
-    100%{
-        transform: translateX(-160%);
-    }
-}
-/**/
-@keyframes opne_disk2{
-    0%{
-        transform: rotateY(90deg);
-    }
-    100%{
-        transform: rotateY(0deg);
-    }
-}
-@keyframes opne_boll2{
-    0%{
-        transform: translateX(-100%);
-    }
-    100%{
-        transform: translateX(160%);
-    }
 }

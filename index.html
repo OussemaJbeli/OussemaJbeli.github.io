@@ -31,6 +31,8 @@
     <div class="frame" id="frame">
         <!-- ***************************************home -->
         <div class="panel home" id="home_panel">
+            <div class="corner1"></div>
+            <div class="corner2"></div>
             <!-- details -->
             <div class="details" id="details">
                 <div class="discription">
@@ -57,33 +59,64 @@
         </div>
         <!-- ****************************************profile -->
         <div class="panel profile" id="profile_panel">
-            <div class="title" id="profile_title">
-                <p>About </p>
-                <p class="me"> Me</p>
-            </div>
-            <div class="discription">
+            <div class="profile_corner1"></div>
+            <div class="profile_corner2"></div>
+            <div class="face about_me" id="about_me">
                 <div class="picture" id="profile_pict"></div>
-                <p class="multitext_profile"></p>
-                <p class="paragraph_desc">Im a Web and Desktop Application Developer ,a YouTub content creator and a designer 
-                    I love sharing my experience with others, and I also love to learn somthing new every single day.</p>
-                <div class="buttons">
-                    <a href="https://drive.google.com/file/d/1xNu0I4Y7N_2quCvTccL4E7c2QWf58Jyr/view?usp=sharing" download="https://drive.google.com/file/d/1xNu0I4Y7N_2quCvTccL4E7c2QWf58Jyr/view?usp=sharing" class="download_cv">Download CV</a>
+                <div class="discription">
+                    <div class="title" id="profile_title">
+                        <p>About </p>
+                        <p class="me"> Me</p>
+                    </div>
+                    <div class="under_disq">
+                        <p class="multitext_profile"></p>
+                        <p class="paragraph_desc">
+                            Hello! My name is Achref i'm 20 years old.Im a Web and Desktop Application Developer ,a YouTub content creator and a designer 
+                            I love sharing my experience with others, and I also love to learn somthing new every single day.</p>
+                        <div class="buttons">
+                            <a href="https://drive.google.com/file/d/1xNu0I4Y7N_2quCvTccL4E7c2QWf58Jyr/view?usp=sharing" download="https://drive.google.com/file/d/1xNu0I4Y7N_2quCvTccL4E7c2QWf58Jyr/view?usp=sharing" class="download_cv">Download CV</a>
+                        </div>
+                    </div>
                 </div>
+                <p class="key" id="scroll_down"></p>
+            </div>
+            <div class="face experience" id="experience">
+                <div class="picture" id="education_pict"></div>
+                <div class="discription">
+                    <div class="title" id="profile_title">
+                        <p>education</p>
+                    </div>
+                    <p class="paragraph_desc">I am a 2nd year as software engineering student</p>
+                    <div class="cards">
+                        <div class="card">
+                            <p class="year">2021</p>
+                            <p class="education">Baccalaureate technical science</p>
+                        </div>
+                        <div class="card">
+                            <p class="year">2022</p>
+                            <p class="education">information and communication technology</p>
+                        </div>
+                        <div class="card">
+                            <p class="year">2023</p>
+                            <p class="education">Computer Scince in software engineering and information systems</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="key" id="scroll_up"></p>
             </div>
         </div>
         <!-- ***************************************skils -->
         <div class="panel skils" id="skils_panel">
-            <div class="title" id="skils_title">
-                <p>Skils</p>
-            </div>
+            <div class="skils_corner1"></div>
+            <div class="skils_corner2"></div>
             <!-- web -->
-            <div class="skils_panel_web skils_panel">
-                <div class="skils_disk" id="paragraph_desc_web">
-                    <p class="skils_title">
-                        <span class="icon_web icon"></span>
-                        <span class="title">web development</span>
-                    </p>
-                    <p class="paragraph_desc">
+            <div class="skils_panel_web skils_panel" id="skils_panel_web">
+                <p class="skils_title">
+                    <span class="icon_web icon"></span>
+                    <span class="title">web development</span>
+                </p>
+                <div class="skils_disk" >
+                    <p class="paragraph_desc" id="paragraph_desc_web">
                         The main area of my expertise in front-end development
                         is HTML, CSS, JS,(BOOTSTRAP)...
                         building small and medium web apps with 
@@ -92,9 +125,9 @@
                         I have also back-end development experience with php
                         (laravel)
                     </p>
-                </div>
-                <div class="skils_element">
-                    <p class="skils_words word" id="skils_words"></p>
+                    <div class="skils_element">
+                        <p class="skils_words word" id="skils_words"></p>
+                    </div>
                 </div>
                 <div class="second_skils_model" id="second_skils_web">
                     <div class="skill"><h3>HTML</h3><div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div></div>
@@ -107,22 +140,23 @@
                     <div class="skill"><h3>BOOTSTRAP</h3><div class="skill-bar"><div class="skill-progress" style="width: 0%;"></div></div></div>
                     <div class="skill"><h3>API</h3><div class="skill-bar"><div class="skill-progress" style="width: 20%;"></div></div></div>
                 </div>
+                <p class="key" id="next"></p>
             </div>
             <!-- desktop -->
-            <div class="skils_panel_desktop skils_panel">
-                <div class="skils_disk" id="paragraph_desc_desktop">
-                    <p class="skils_title revers">
-                        <span class="icon_desk icon"></span>
-                        <span class="title">Desktop development</span>
-                    </p>
-                    <p class="paragraph_desc">
+            <div class="skils_panel_desktop skils_panel" id="skils_panel_desktop">
+                <p class="skils_title revers">
+                    <span class="icon_desk icon"></span>
+                    <span class="title">Desktop development</span>
+                </p>
+                <div class="skils_disk">
+                    <p class="paragraph_desc" id="paragraph_desc_desktop">
                         my expertise in Desktop development
                         is develop software applications for desktop and server operating systems
                         using javafx and java swing
                     </p>
-                </div>
-                <div class="skils_element" id="skils_element">
-                    <p class="skils_words_decktop word" id="skils_words_decktop"></p>
+                    <div class="skils_element">
+                        <p class="skils_words_decktop word" id="skils_words_decktop"></p>
+                    </div>
                 </div>
                 <div class="second_skils_model" id="second_skils_deskktop">
                     <div class="skill"><h3>JAVAFX</h3><div class="skill-bar"><div class="skill-progress" style="width: 60%;"></div></div></div>
@@ -138,23 +172,25 @@
                     <div class="skill"><h3>C++</h3><div class="skill-bar"><div class="skill-progress" style="width: 60%;"></div></div></div>
                     <div class="skill"><h3>C#</h3><div class="skill-bar"><div class="skill-progress" style="width: 50%;"></div></div></div>
                 </div>
+                <p class="key" id="next2"></p>
+                <p class="key" id="previews1"></p>
             </div>
             <!-- media_creator -->
-            <div class="skils_panel_media skils_panel">
-                <div class="skils_disk"id="paragraph_desc_media">
-                    <p class="skils_title">
-                        <span class="icon_media icon"></span>
-                        <span class="title">gaming & media editing</span>
-                    </p>
-                    <p class="paragraph_desc">
+            <div class="skils_panel_media skils_panel" id="skils_panel_media">
+                <p class="skils_title">
+                    <span class="icon_media icon"></span>
+                    <span class="title">gaming & media editing</span>
+                </p>
+                <div class="skils_disk">
+                    <p class="paragraph_desc" id="paragraph_desc_media">
                         i have also expertise in content creator
                         is craete and edite AMV videos,record gaming videos and create 3d objects
                         using adobe premiere,filmora,adobe photoshope...
                         unity,blander,unreal engine 5..
                     </p>
-                </div>
-                <div class="skils_element">
-                    <p class="skils_words_media word" id="skils_words_media"></p>
+                    <div class="skils_element">
+                        <p class="skils_words_media word" id="skils_words_media"></p>
+                    </div>
                 </div>
                 <div class="second_skils_model" id="second_skils_media">
                     <div class="skill"><h3>ADOBE PREMIER</h3><div class="skill-bar"><div class="skill-progress" style="width: 60%;"></div></div></div>
@@ -165,152 +201,260 @@
                     <div class="skill"><h3>UNITY</h3><div class="skill-bar"><div class="skill-progress" style="width: 60%;"></div></div></div>
                     <div class="skill"><h3>FILMORA</h3><div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div></div>
                 </div>
+                <p class="key" id="previews"></p>
             </div>
         </div>
         <!-- ****************************************project -->
         <div class="panel project" id="project_panel">
-            <p class="title">projects</p>
             <div class="contain">
                 <!-- web -->
-                <div class="web_panel panel_projects">
-                    <p class="projects_title">web development</p>
+                <div class="web_panel panel_projects" id="web_pro">
+                    <div class="corner_projects">
+                        <div class="projects_title" id="projects_title1">
+                            <div class="logo_img"></div>
+                            <p>web development</p>
+                        </div>
+                        <div class="projects_title" id="projects_title2">
+                            <div class="logo_img"></div>
+                            <p>Desktop development</p>
+                        </div>
+                        <div class="projects_title" id="projects_title3">
+                            <div class="logo_img"></div>
+                            <p>gaming & media editing</p>
+                        </div>
+                    </div>
                     <div class="cards_web ender_panel_projects">
                         <div class="cards">
                             <div class="card">
                                 <div class="trans_hiegth">
-                                    <img src="icons/web_prog.jpg" alt="">
+                                    <img src="icons/prjects/web/fitnes.png" alt="">
                                     <div class="more">
-                                        <h1>test</h1>
-                                        <a href=""></a>
+                                        <h1>fitness</h1>
+                                        <a href="gh repo clone OussemaJbeli/fitness"></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="trans_hiegth">
-                                    <img src="icons/web_prog.jpg" alt="">
+                                    <img src="icons/prjects/web/gamer_wol.png" alt="">
                                     <div class="more">
-                                        <h1>test</h1>
-                                        <a href=""></a>
+                                        <h1>gamer wolf</h1>
+                                        <a href="gh repo clone OussemaJbeli/gamer-wolf-project"></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="trans_hiegth">
-                                    <img src="icons/web_prog.jpg" alt="">
+                                    <img src="icons/prjects/web/login_password_saver.png" alt="">
                                     <div class="more">
-                                        <h1>test</h1>
-                                        <a href=""></a>
+                                        <h1>user login</h1>
+                                        <a href="gh repo clone OussemaJbeli/privacy-saver-web-project-v2.0.0"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="trans_hiegth">
+                                    <img src="icons/prjects/web/XO_games.png" alt="">
+                                    <div class="more">
+                                        <h1>xo game</h1>
+                                        <a href="gh repo clone OussemaJbeli/XO_Game"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="trans_hiegth">
+                                    <img src="icons/prjects/web/password_saver.png" alt="">
+                                    <div class="more">
+                                        <h1>password saver</h1>
+                                        <a href="gh repo clone OussemaJbeli/privacy-saver-web-project-v2.0.0"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="trans_hiegth">
+                                    <img src="icons/prjects/web/portflio_v1.png" alt="">
+                                    <div class="more">
+                                        <h1>Portfolio template 1</h1>
+                                        <a href="gh repo clone OussemaJbeli/olde_portfoli"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="trans_hiegth">
+                                    <img src="icons/prjects/web/portflio_v2.png" alt="">
+                                    <div class="more">
+                                        <h1>Portfolio template 2</h1>
+                                        <a href="gh repo clone OussemaJbeli/privacy-saver-web-project-v1.2.5"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="trans_hiegth">
+                                    <img src="icons/prjects/web/portflio_v3.png" alt="">
+                                    <div class="more">
+                                        <h1>Portfolio template 3</h1>
+                                        <a href="gh repo clone OussemaJbeli/profile_2023_v1"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="trans_hiegth">
+                                    <img src="icons/prjects/web/to_do_list_1.png" alt="">
+                                    <div class="more">
+                                        <h1>quik todo list</h1>
+                                        <a href="gh repo clone OussemaJbeli/to_do_list"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="trans_hiegth">
+                                    <img src="icons/prjects/web/to_do_list_2.png" alt="">
+                                    <div class="more">
+                                        <h1>smart todo list</h1>
+                                        <a href="gh repo clone OussemaJbeli/to_do_list"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="logo">
-                            <div class="logo_img"></div>
-                        </div>
+                        <a href="https://github.com/OussemaJbeli?tab=repositories">see more...</a>
                     </div>
+                    <p class="key" id="next_project1"></p>
                 </div>
                 <!-- desktop -->
-                <div class="desktop_panel panel_projects">
-                    <p class="projects_title">Desktop development</p>
+                <div class="desktop_panel panel_projects" id="desk_pro">
                     <div class="card_desktops ender_panel_projects">
                         <div class="cards">
                             <div class="card">
                                 <div class="trans_hiegth">
-                                    <img src="icons/disktop_prog.jpg" alt="">
+                                    <img src="icons/prjects/desktop/crud.png" alt="">
                                     <div class="more">
-                                        <h1>test</h1>
+                                        <h1>system saver(CRUD)</h1>
                                         <a href=""></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="trans_hiegth">
-                                    <img src="icons/disktop_prog.jpg" alt="">
+                                    <img src="icons/prjects/desktop/dash_board.png" alt="">
                                     <div class="more">
-                                        <h1>test</h1>
-                                        <a href=""></a>
+                                        <h1>dash board</h1>
+                                        <a href="gh repo clone OussemaJbeli/Password-Saver-2.0.1"></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="trans_hiegth">
-                                    <img src="icons/disktop_prog.jpg" alt="">
+                                    <img src="icons/prjects/desktop/login.png" alt="">
                                     <div class="more">
-                                        <h1>test</h1>
-                                        <a href=""></a>
+                                        <h1>user login</h1>
+                                        <a href="gh repo clone OussemaJbeli/Password-Saver-2.0.1"></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="trans_hiegth">
-                                    <img src="icons/disktop_prog.jpg" alt="">
+                                    <img src="icons/prjects/desktop/password_saver.png" alt="">
                                     <div class="more">
-                                        <h1>test</h1>
-                                        <a href=""></a>
+                                        <h1>password saver</h1>
+                                        <a href="gh repo clone OussemaJbeli/Password-Saver-2.0.1"></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="trans_hiegth">
-                                    <img src="icons/disktop_prog.jpg" alt="">
+                                    <img src="icons/prjects/desktop/xo_game.png" alt="">
                                     <div class="more">
-                                        <h1>test</h1>
-                                        <a href=""></a>
+                                        <h1>xo game</h1>
+                                        <a href="gh repo clone OussemaJbeli/Game-XO"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="logo">
-                            <div class="logo_img"></div>
-                        </div>
+                        <a href="https://github.com/OussemaJbeli?tab=repositories">see more...</a>
                     </div>
+                    <p class="key" id="next_project2"></p>
+                    <p class="key" id="previews_project1"></p>
                 </div>
                 <!-- media -->
-                <div class="media_panel panel_projects">
-                    <p class="projects_title">gaming & media editing</p>
+                <div class="media_panel panel_projects" id="media_pro">
                     <div class="cards_media ender_panel_projects">
                         <div class="cards">
                             <div class="card">
                                 <div class="trans_hiegth">
-                                    <img src="icons/media_prog.jpg" alt="">
+                                    <img src="icons/prjects/media/bleach AMV.jpg" alt="">
                                     <div class="more">
-                                        <h1>test</h1>
-                                        <a href=""></a>
+                                        <h1>amv</h1>
+                                        <a href="https://www.youtube.com/channel/UCfWmsjVfTxiMngtwlP9HrGw"></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="trans_hiegth">
-                                    <img src="icons/media_prog.jpg" alt="">
+                                    <img src="icons/prjects/media/sad AMV in the end.png" alt="">
                                     <div class="more">
-                                        <h1>test</h1>
-                                        <a href=""></a>
+                                        <h1>amv</h1>
+                                        <a href="https://www.youtube.com/channel/UCfWmsjVfTxiMngtwlP9HrGw"></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="trans_hiegth">
-                                    <img src="icons/media_prog.jpg" alt="">
+                                    <img src="icons/prjects/media/Picsart_22-09-03_13-56-29-996.jpg" alt="">
                                     <div class="more">
-                                        <h1>test</h1>
-                                        <a href=""></a>
+                                        <h1>amv</h1>
+                                        <a href="https://youtu.be/FUyJYydrXYw"></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="trans_hiegth">
-                                    <img src="icons/media_prog.jpg" alt="">
+                                    <img src="icons/prjects/media/Picsart_22-09-03_09-17-27-547.jpg" alt="">
                                     <div class="more">
-                                        <h1>test</h1>
-                                        <a href=""></a>
+                                        <h1>AMV</h1>
+                                        <a href="https://youtu.be/U3dUZ96Yw-A"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="trans_hiegth">
+                                    <img src="icons/prjects/media/1.png" alt="">
+                                    <div class="more">
+                                        <h1>edite</h1>
+                                        <a href="https://youtu.be/IJ4yQAhr0wY"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="trans_hiegth">
+                                    <img src="icons/prjects/media/5.png" alt="">
+                                    <div class="more">
+                                        <h1>edite</h1>
+                                        <a href="https://youtu.be/8Ori9tSGqfk"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="trans_hiegth">
+                                    <img src="icons/prjects/media/7.png" alt="">
+                                    <div class="more">
+                                        <h1>edite</h1>
+                                        <a href="https://youtu.be/ZDI4eBE8aIw"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="trans_hiegth">
+                                    <img src="icons/prjects/media/8.png" alt="">
+                                    <div class="more">
+                                        <h1>edite</h1>
+                                        <a href="https://youtu.be/KC0mGFDAHoI"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="logo">
-                            <div class="logo_img"></div>
-                        </div>
+                        <a href="https://www.youtube.com/channel/UCfWmsjVfTxiMngtwlP9HrGw">see more...</a>
                     </div>
+                    <p class="key" id="previews_project2"></p>
                 </div>
             </div>
         </div>
@@ -321,19 +465,25 @@
                 <div class="cards">
                     <div class="card">
                         <span></span>
-                        <p class="title">phone</p>
                         <p>+21625114221</p>
                     </div>
                     <div class="card">
                         <span class="mail"></span>
-                        <p class="title">e-mail</p>
                         <p>Jbelioussema33@gmail.com</p>
                     </div>
                 </div>
+                <form action="https://formsubmit.co/jbelioussema33@gmail.com" method="POST">
+                    <div class="information">
+                        <input class="holder" placeholder="FULL_NAME" type="text" name="FULL_NAME" required>
+                        <input class="holder" placeholder="YOUR E-MAIL" type="email" name="email" required>
+                    </div>
+                    <input class="text" placeholder="YOUR MESSAGE" type="text" name="text_contain" required>
+                    <button class="butt" type="submit">Send</button>
+                </form>
             </div>
             <div class="contact_icons">
                 <p>Copyrith @<span><a id="Copyrith">Jbeli Oussema</a></span></p>
-                <div class="media_logos" id="media_logos">
+                <div class="contact_media" id="media_logos">
                     <a id="linkedin_contact" href="https://www.linkedin.com/in/jbeli-oussema-235787253/" target="_blank"></a>
                     <a id="facebook_contact" href="https://www.facebook.com/oussamajbali.jbali" target="_blank"></a>
                     <a id="github_contact" href="https://github.com/OussemaJbeli" target="_blank"></a>
@@ -354,5 +504,6 @@
 <script src="script/script_home.js"></script>
 <script src="script/script_profile.js"></script>
 <script src="script/script_skils.js"></script>
+<script src="script/script_projects.js"></script>
 <script src="script/script_ball_ward.js"></script>
 </html>
