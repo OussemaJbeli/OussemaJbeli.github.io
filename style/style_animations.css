@@ -116,13 +116,13 @@
 }
 @keyframes profile_corner2_animation{
     0%{
-        transform: translate(-15%,90%) rotateZ(20deg);
+        transform: translate(15%,90%) rotateZ(-20deg);
     }
     50%{
-        transform: translate(-17%,95%) rotateZ(22deg);
+        transform: translate(17%,95%) rotateZ(-22deg);
     }   
     100%{
-        transform: translate(-15%,90%) rotateZ(20deg);
+        transform: translate(15%,90%) rotateZ(-20deg);
     }
 }
 /**key profile**/

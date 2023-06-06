@@ -559,10 +559,6 @@
     .contact .contact_icons .media_logos a{
         height: 50%;
     }
-    #github_contact,#linkedin_contact,#youtub_contact,#twiter_contact{
-        height: 40%;
-        margin: 5px;
-    }
 }
 @media (max-width:550px){
     /*********projects*****/
@@ -596,29 +592,18 @@
         transform: rotateZ(-180deg);
     }
     .project .corner_projects .logo_img{
-        width: 70px;
-        height: 70px;
-        background-color: var(--main_color2);
-        border-style: solid;
-        border-radius: 50%;
-        border-color: var(--main_color2);
+        visibility: hidden;
     }
     #projects_title1 .logo_img{
-        top: 0%;
-        left: 55%;
-        transform: rotateZ(0deg);
+        visibility: hidden;
     }
     /******desktop*****/
     #projects_title2 .logo_img{
-        top: -0%;
-        left: -0%;
-        transform: rotateZ(-90deg);
+        visibility: hidden;
     }
     /******media*****/
     #projects_title3 .logo_img{
-        top: 55%;
-        left: 0%;
-        transform: rotateZ(-180deg);
+        visibility: hidden;
     }
     /*****contain***/
     .project .contain .panel_projects .ender_panel_projects{
@@ -740,13 +725,13 @@
         top: 0;
     }
     #experience{
-        top: 70%;
+        top: 90%;
     }
     /*pictur*/
     #experience .picture{
         height: 150px;
         width: 150px; 
-        margin-bottom: 50px;
+        margin: 0px;
     }
     #profile_pict{
         height: 150px;
@@ -754,7 +739,6 @@
     }
     #experience .cards{
         flex-direction: column;
-        height: 500px;
     }
     #experience .cards .card{
         width: 100%;
@@ -779,18 +763,18 @@
         }
         @keyframes profile_corner2_animation{
             0%{
-                transform: translate(-20%,90%) rotateZ(20deg);
+                transform: translate(20%,90%) rotateZ(-20deg);
             }
             50%{
-                transform: translate(-22%,95%) rotateZ(22deg);
+                transform: translate(22%,95%) rotateZ(-22deg);
             }   
             100%{
-                transform: translate(-20%,90%) rotateZ(20deg);
+                transform: translate(20%,90%) rotateZ(-20deg);
             }
         }
     /* profile info */
 .profile .discription{
-    height: 40%;
+    height: 55%;
     width: 90%;
     padding-left: 0;
     flex-direction: column;
@@ -858,31 +842,6 @@
         top: -45%;
         transform: rotateZ(-180deg);
     }
-    .project .corner_projects .logo_img{
-        width: 50px;
-        height: 50px;
-        background-color: var(--main_color2);
-        border-style: solid;
-        border-radius: 50%;
-        border-color: var(--main_color2);
-    }
-    #projects_title1 .logo_img{
-        top: 0%;
-        left: 57%;
-        transform: rotateZ(0deg);
-    }
-    /******desktop*****/
-    #projects_title2 .logo_img{
-        top: -0%;
-        left: -0%;
-        transform: rotateZ(-90deg);
-    }
-    /******media*****/
-    #projects_title3 .logo_img{
-        top: 55%;
-        left: 0%;
-        transform: rotateZ(-180deg);
-    }
     /******project**/
     .project .contain .panel_projects .projects_title{
         font-size: 20px;
@@ -911,7 +870,7 @@
 @media (max-width:370px){
     /*********skils***/
     #next,#next2{
-        left: 80%;
+        left: 75%;
     }
     #previews,#previews1{
         left: 5%;

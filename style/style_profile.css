@@ -31,7 +31,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    transform: translate(-15%,90%) rotateZ(20deg);
+    transform: translate(15%,90%) rotateZ(-20deg);
     animation: profile_corner2_animation 4s  ease infinite;
 }
 /*********************frame-scroll_panel***********************/

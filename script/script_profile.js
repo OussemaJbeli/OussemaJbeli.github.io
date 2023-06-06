@@ -25,12 +25,12 @@ document.addEventListener('keydown', function(event) {
 function test_down(test){
     if (test == false) {
         about_me.style.transform="rotateZ(0deg)translateY(0)";
-        experience.style.transform="rotateZ(45deg)translateY(0)";
+        experience.style.transform="rotateZ(70deg)translateY(0)";
         scroll_down.style.display="flex";
     }
     else{
-        about_me.style.transform="rotateZ(-45deg)translateY(-100%)";
-        experience.style.transform="rotateZ(0deg)translateY(-75%)";
+        about_me.style.transform="rotateZ(-70deg)translateY(-100%)";
+        experience.style.transform="rotateZ(0deg)translateY(-90%)";
         scroll_down.style.display="none";
         down=true;
     }
