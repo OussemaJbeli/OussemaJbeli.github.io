@@ -792,6 +792,12 @@
     margin-top: 20px;
 }
     /*********skils***/
+    #next,#next2{
+        left: 70%;
+    }
+    #previews,#previews1{
+        left: 5%;
+    }
     .skils_panel .skils_disk .skils_title .icon{
         height: 100px;
         width: 100px;
