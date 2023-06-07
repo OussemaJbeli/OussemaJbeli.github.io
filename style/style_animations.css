@@ -102,6 +102,12 @@
     }
 } 
 /**********************profile************************/
+/****pictur*/
+@keyframes rotation_pict {
+    100%{
+        transform: rotate(360deg);
+    }
+}
 /*corner profile*/
 @keyframes profile_corner1_animation{
     0%{

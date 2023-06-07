@@ -93,30 +93,29 @@
 }
 /*pictur*/
 .face .picture{
+    position: relative;
     height: 300px;
     width: 300px;
     border-style: solid;
     border-radius: 50%;
-    border-color: transparent;
-    background-color: var(--main_color2);
-    box-shadow: 0px 16px 20px 0px var(--main_color1);
+    border-color: var(--main_color1);
+    background-color: var(--main_color1);
     margin-right: 20px;
-    background-image: url(../icons/profile/about_me.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
-@keyframes fly_icon{
-    0%{
-        transform: translateY(0%);
-    }
-    50%{
-        transform: translateY(-15%);
-    }
-    100%{
-        transform: translateY(0%);
-    }
-} 
+.face .picture::after{
+    position: absolute;
+    content: "";
+    top: -10%;
+    left: -10%;
+    height: 120%;
+    width: 120%;
+    transform-origin: 50% 50%;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 5px;
+    border-color:var(--main_color1)  transparent var(--main_color1) transparent;
+    animation: rotation_pict 4s linear infinite;
+}
 /* profile info */
 .profile .discription{
     height: 50%;
@@ -126,6 +125,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+}
+#profile_pict{
+    background-image: url(../icons/profile/about_me.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* title */
 #about_me .title{
@@ -184,20 +189,13 @@
     transform: rotateZ(45deg) translateY(0);
 }
 /*pictur*/
-#experience .picture{
-    height: 300px;
-    width: 300px;
-    border-style: solid;
-    border-radius: 50%;
-    border-color: transparent;
-    background-color: var(--main_color2);
-    box-shadow: 0px 16px 20px 0px var(--main_color1);
-    margin-right: 20px;
-    background-image: url(../icons/profile/education.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation: fly_icon 4s ease infinite;
+#education_pict{
+    font-size: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    animation:fly_icon 4s ease infinite;
 }
 #experience .title{
     font-size: 45px;

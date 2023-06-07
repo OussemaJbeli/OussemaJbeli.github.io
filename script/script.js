@@ -1,4 +1,4 @@
-let buttons = document.querySelectorAll(".fa-solid");
+let buttons = document.querySelectorAll(".nav_font");
 let load_page = document.getElementById("load_page");
 let nav_bar = document.getElementById("nav_bar");
 let closed_pan = "home_panel";
