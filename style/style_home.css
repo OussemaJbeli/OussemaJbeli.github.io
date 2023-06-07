@@ -55,9 +55,13 @@ body{
     align-items: center;
     justify-content: center;
     transition: 0.4s ease;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+}
+.nav_bar li i{
+    font-size: 35px;
+    color: var(--main_color2);
+}
+.nav_bar li .fa-house{
+    color: var(--main_color1);
 }
 .nav_bar li::before{
     content: '';
@@ -73,23 +77,6 @@ body{
 .nav_bar li:hover::before{
     width: 100%;
     left: 0;
-}
-#home{
-    background-image: url(../icons/nav_bar/home_open.png);
-}
-#profile{
-    background-image: url(../icons/nav_bar/profile_close.png);
-}
-#skils{
-    background-image: url(../icons/nav_bar/skils_close.png);
-}
-#project{
-    background-image: url(../icons/nav_bar/project_close.png);
-    background-size: 120% 150%;
-    width: 40px;
-}
-#contact{
-    background-image: url(../icons/nav_bar/contact_close.png);
 }
 /***************************frame************************/
 .frame{

@@ -619,7 +619,8 @@
         height: 80%;
     }
     .contact .title{
-        font-size: 30px;
+        margin-top: 10px;
+        font-size: 25px;
     }
     .contact .contain .cards{
         width: 300px;
@@ -628,6 +629,10 @@
         width: 100%;
         height: 40px;
         margin: 5px 0;
+    }
+    .contact .contain .cards .card i{
+        margin-top: 10px;
+        font-size: 25px;
     }
     .contact .contain form{
         width: 300px;
@@ -676,20 +681,12 @@
     .frame{
         height: 80%;
     }
-    #project{
-        height: 75%;
-    }
     /* *********home */
     .nav_bar ul{
         width: 300px;
     }
-    .nav_bar ul li{
-        width: 20px;
-        height: 20px;
-    }
-    #project{
-        height: 25px;
-        width: 25px;
+    .nav_bar ul li i{
+        font-size: 20px;
     }
     .hello{
         font-size: 20px;

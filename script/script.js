@@ -1,4 +1,4 @@
-let buttons = document.querySelectorAll(".nav_butt");
+let buttons = document.querySelectorAll(".fa-solid");
 let load_page = document.getElementById("load_page");
 let closed_pan = "home_panel";
 // Add a click event listener to each chekbox
@@ -22,11 +22,11 @@ function butt(butt){
     for(let i=0;i<=4;i++){
         if(tab[i]==butt){
             let icon = document.getElementById(butt);
-            icon.style.backgroundImage="url(../icons/nav_bar/"+butt+"_open.png)";
+            icon.style.color="var(--main_color1)";
         }
         else{
             let icon = document.getElementById(tab[i]);
-            icon.style.backgroundImage="url(../icons/nav_bar/"+tab[i]+"_close.png)";
+            icon.style.color="var(--main_color2)";
         }
     }
 }

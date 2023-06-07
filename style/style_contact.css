@@ -57,23 +57,13 @@
 .contact .contain .cards .card:hover{
     transform: scale(1.1);
 }
-.contact .contain .cards .card span{
+.contact .contain .cards .card i{
     height: 40px;
     width: 40px;
     margin-right: 10px;
-    background-image: url(../icons/contact/phone.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    font-size: 35px;
+    color: var(--main_color2);
     border-color: transparent;
-}
-.contact .contain .cards .card .mail{
-    height: 30px;
-    width: 30px;
-    background-image: url(../icons/contact/mail.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 .contact .contain .cards .card .title{
     height: 20%;
