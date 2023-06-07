@@ -799,7 +799,7 @@
 }
     /*********skils***/
     #next,#next2{
-        left: 80%;
+        left: 90%;
     }
     #previews,#previews1{
         left: 5%;
@@ -882,7 +882,7 @@
 @media (max-width:370px){
     /*********skils***/
     #next,#next2{
-        left: 81%;
+        left: 90%;
     }
     #previews,#previews1{
         left: 5%;

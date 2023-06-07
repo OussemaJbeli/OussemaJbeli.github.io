@@ -207,7 +207,8 @@
     font-weight: 900;
 }
 #experience .paragraph_desc{
-    height: 20%;
+    height: 25%;
+    margin-bottom: 20px;
 }
 #experience .cards{
     height: 60%;
