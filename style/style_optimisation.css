@@ -224,7 +224,7 @@
         .skils_panel .skils_disk .paragraph_desc{
             width: 90%;
             font-size: 20px;
-            text-align: center;
+            text-align: justify;
         }
         #next,#next2{
             left: 90%;
@@ -312,7 +312,7 @@
         top: 0;
     }
     #experience{
-        top: 70%;
+        top: 90%;
     }
     /*pictur*/
     #experience .picture{
@@ -361,6 +361,10 @@
 #about_me .title{
     width: 160px;
 }
+#experience .title p{
+    font-size: 30px;
+    margin: 10px 0;
+}
 #about_me .title p{
     font-size: 30px;
 }
@@ -377,6 +381,8 @@
     font-size: 28px;
 }
 .profile .discription .paragraph_desc{
+    text-align: center;
+    display: block;
     font-size: 15px;
 }
 .profile .discription .under_disq .buttons{
@@ -483,11 +489,12 @@
     .pictur_panel{
         width: 100%;
         height: 40%;
+        justify-content: center;
+        align-items: end;
     }
     .pictur_panel .icon{
-        width: 200px;
-        height: 75%;
-        box-shadow: 0px 16px 20px 0px var(--main_color1);
+        width: 220px;
+        height: 220px;
     }
     .details{
         width: 100%;
@@ -783,7 +790,9 @@
 }
 #about_me .title p{
     font-size: 25px;
-    margin-bottom: 10px;
+}
+#experience .title p{
+    font-size: 25px;
 }
 .profile .discription .paragraph_desc{
     text-align: center;
@@ -793,7 +802,7 @@
 }
     /*********skils***/
     #next,#next2{
-        left: 70%;
+        left: 80%;
     }
     #previews,#previews1{
         left: 5%;
@@ -876,7 +885,7 @@
 @media (max-width:370px){
     /*********skils***/
     #next,#next2{
-        left: 75%;
+        left: 81%;
     }
     #previews,#previews1{
         left: 5%;

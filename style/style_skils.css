@@ -1,14 +1,5 @@
 .skils_panel::-webkit-scrollbar{
-    width: 15px;
-    border-radius: 25px;
-}
-.skils_panel::-webkit-scrollbar-track{
-    background-color: var(--main_color2);
-    border-radius: 0 30px 30px 0;
-}
-.skils_panel::-webkit-scrollbar-thumb{
-    border-radius: 0 30px 30px 0;
-    background-color: var(--main_color1);
+    width: 0px;
 }
 /**************************************************skils**************************/
 .skils{

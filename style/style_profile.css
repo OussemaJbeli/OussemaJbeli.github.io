@@ -179,7 +179,7 @@
 }
 /************experience******************/
 #experience{
-    top: 80%;
+    top: 100%;
     transform-origin: 0 0;
     transform: rotateZ(45deg) translateY(0);
 }
@@ -203,6 +203,7 @@
     font-size: 45px;
     color: var(--main_font_color1);
     height: 20%;
+    font-family: var(--main_font);
     font-weight: 900;
 }
 #experience .paragraph_desc{

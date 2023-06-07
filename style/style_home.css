@@ -200,7 +200,7 @@ body{
 /*******buttons*****/
 .buttons{
     position: relative;
-    width: 50%;
+    width: 60%;
     height: 20%;
     display: flex;
     justify-content: space-between;
@@ -298,17 +298,15 @@ body{
     width: 50%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 .pictur_panel .icon{
     position: relative;
-    width: 300px;
-    height: 300px;
-    top: 0;
-    left: 70%;
-    border-radius: 20px;
-    border-width: 0px;
-    background-color: var(--main_color2);
-    box-shadow: 0px 25px 20px 0px var(--main_color1);
+    width: 400px;
+    height: 400px;
+    background-image: url(../icons/bg_home/Untitled-4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
