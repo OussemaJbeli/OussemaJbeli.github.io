@@ -1,5 +1,6 @@
 let buttons = document.querySelectorAll(".fa-solid");
 let load_page = document.getElementById("load_page");
+let nav_bar = document.getElementById("nav_bar");
 let closed_pan = "home_panel";
 // Add a click event listener to each chekbox
 buttons.forEach(nav => {
@@ -35,6 +36,7 @@ function animate(new_panel,old_panel){
     let olde_pan = document.getElementById(old_panel);
     let new_pan = document.getElementById(new_panel);
     // panel 1
+    nav_bar.style.zIndex='-999';
     olde_pan.style.display="flex";
     olde_pan.style.animation="zoomout .5s ease forwards";
     setTimeout(function() {
@@ -64,6 +66,7 @@ function animate(new_panel,old_panel){
     setTimeout(function() {
         new_pan.style.left="0";
         new_pan.style.animation=" zoomin .2s ease forwards";
+        nav_bar.style.zIndex='1';
     }, 2500);
 
 }
