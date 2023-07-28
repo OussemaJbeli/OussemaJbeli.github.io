@@ -1,6 +1,7 @@
 const Txt1 = [
     'HTML', 'CSS', 'JAVASCRIPT',
-    'SWIFT','PHP', 'SASS','MONGODB',
+    'SWIFT','PHP', 'LARAVEL','VUE JS',
+    'TALIWINDCss','SASS','MONGODB',
     'MYSQL', 'JQUERY', 'JAVA','ORACLE',
     'POSTGRESQL', 'SQLITE', 'BOOTSTRAP','API'
     ];
