@@ -4,6 +4,7 @@
 }
 a{
     text-decoration: none;
+    cursor: none;
 }
 li{
     list-style: none
@@ -17,6 +18,7 @@ li{
 
     --main_font_color1:#ffc502;
     --main_font_color2:#fff;
+    --main_font_color4:#f0f0f0;
     --main_font_color3:#120e80;
 }
 body{
@@ -27,6 +29,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: none;
 }
 /********************************nav******************/
 .nav_bar{
@@ -166,8 +169,8 @@ body{
 .hello{
     position: relative;
     font-family: var(--main_font);
-    font-size: 35px;
-    color: var(--main_font_color2);
+    font-size: 30px;
+    color: var(--main_font_color4);
 }
 .Im{
     position: relative;
@@ -246,40 +249,65 @@ body{
     left: -60%;
 }
 /******midea_contact**/
-.media_logos{
-    width: 275px;
-    height: 20%;
+
+/* From Uiverse.io by ubaidi10 */ 
+.media_logos {
+    width: fit-content;
+    height: fit-content;
     display: flex;
-    flex-direction: row;
     align-items: center;
-}
-.media_logos a{
-    width: 50px;
-    height: 50px;
-    margin-left: 5px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 0.4s ease;
-}
-.media_logos a:hover{
-    transform: translateY(-10px);
-}
-#linkedin{
-    background-image: url(../icons/media_icons/linkedin.png);
-}
-#facebook{
-    background-image: url(../icons/media_icons/fecebook.png);
-}
-#github{
-    background-image: url(../icons/media_icons/github.png);
-}
-#youtub{
-    background-image: url(../icons/media_icons/youtub.png);
-}
-#twiter{
-    background-image: url(../icons/media_icons/twiter.png);
-}
+    justify-content: center;
+    padding: 25px 0;
+    gap: 20px;
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 45px;
+    height: 45px;
+    background-color:  var(--main_color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    border: 2.5px solid var(--main_color1);
+    border-radius: 10px;
+  }
+  /* instagram*/
+  .socialContainer:hover {
+    background-color: var(--main_color1);
+    transition-duration: 0.3s;
+    transform: scale(1.5);
+    border-radius: 15px;
+  }
+
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+  }
+  
+  .socialSvg {
+    font-size: 17px;
+    color: #fff;
+  }
+
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
 /***********pictur***************/
 .pictur_panel{
     position: relative;
@@ -294,7 +322,20 @@ body{
     width: 400px;
     height: 400px;
     background-image: url(../icons/bg_home/Untitled-4.png);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* cursor */
+.cursor{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-color: #edf1fd;
+    mix-blend-mode: difference;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
 }

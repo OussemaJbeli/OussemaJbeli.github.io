@@ -111,24 +111,24 @@
 /*corner profile*/
 @keyframes profile_corner1_animation{
     0%{
-        transform: translate(-18%,-60%) rotateZ(-20deg)
+        transform: translate(-18%,-75%) rotateZ(-20deg)
     }
     50%{
-        transform: translate(-18%,-62%) rotateZ(-22deg);
+        transform: translate(-18%,-80%) rotateZ(-22deg);
     }   
     100%{
-        transform: translate(-18%,-60%) rotateZ(-20deg)
+        transform: translate(-18%,-75%) rotateZ(-20deg)
     }
 }
 @keyframes profile_corner2_animation{
     0%{
-        transform: translate(15%,90%) rotateZ(-20deg);
+        transform: translate(15%,95%) rotateZ(-20deg);
     }
     50%{
-        transform: translate(17%,95%) rotateZ(-22deg);
+        transform: translate(17%,100%) rotateZ(-22deg);
     }   
     100%{
-        transform: translate(15%,90%) rotateZ(-20deg);
+        transform: translate(15%,95%) rotateZ(-20deg);
     }
 }
 /**key profile**/
