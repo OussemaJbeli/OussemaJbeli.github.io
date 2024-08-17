@@ -18,6 +18,9 @@
     overflow: hidden;
     position: absolute;
 }
+.project .key{
+    border-color: var(--main_color2);
+}
 /********************** contain */
 .project .contain{
     width: 100%;

@@ -8,16 +8,15 @@
 /***************title*********/
 .contact .title{
     position: relative;
-    height: 100px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-family: var(--main_font);
-    font-size: 48px;
-    font-weight: 900;
+    font-size: 35px;
+    font-weight: 700;
     color: var(--main_font_color1);
-    height: 10%;
+    margin: 10px;
 }
 /**************contain*****/
 .contact .contain{
@@ -58,10 +57,8 @@
     transform: scale(1.1);
 }
 .contact .contain .cards .card i{
-    height: 40px;
-    width: 40px;
     margin-right: 10px;
-    font-size: 35px;
+    font-size: 25px;
     color: var(--main_color2);
     border-color: transparent;
 }

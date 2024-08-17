@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style/style_home.css">
     <link rel="stylesheet" href="style/style_profile.css">
     <link rel="stylesheet" href="style/style_skils.css">
@@ -14,8 +19,27 @@
     <link rel="stylesheet" href="style/style_animations.css">
     <link rel="stylesheet" href="style/style_optimisation.css">
     <link rel="stylesheet" href="style/style_secons_skils.css">
+    <!-- animation -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link rel="icon" type="icon" href="icons/logo.png"> 
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
 </head>
 <body>
     <!-- header -->
@@ -36,16 +60,13 @@
             <div class="corner2"></div>
             <!-- details -->
             <div class="details" id="details">
-                <div class="discription">
-                    <p class="hello" id="hello">Hello__</p>
-                    <p class="Im" id="im">I'm Oussema Jbeli</p>
+                <div class="discription wow fadeInUp" data-wow-delay="0.5s">
+                    <p class="hello" id="hello">Hello I'm</p>
+                    <p class="Im" id="im">Oussema Jbeli</p>
                     <p class="multitext"></p>
+                    <p class="smalldesc">Passionate Developer & Designer dedicated to creating innovative and user-friendly digital experiences. Let's connect!</p>
                 </div>
-                <div class="buttons" id="buttons">
-                    <a href="https://drive.google.com/file/d/1-7B53SB7hAlxFVge3OCY-82rQe1B0UaI/view?usp=sharing" download="https://drive.google.com/file/d/1-7B53SB7hAlxFVge3OCY-82rQe1B0UaI/view?usp=sharing" class="download_cv" target="_blank">Download CV</a>
-                    <a href="https://github.com/OussemaJbeli" class="works" target="_blank">view my works</a>
-                </div>
-                <div class="media_logos" id="media_logos">
+                <div class="media_logos wow fadeInUp" data-wow-delay="1s" id="media_logos">
                     <a href="https://www.linkedin.com/in/jbeli-oussema-235787253/" class="socialContainer containerOne" target="_blank">
                         <i class="socialSvg fa-brands fa-linkedin-in"></i>
                     </a>
@@ -62,6 +83,10 @@
                         <i class="socialSvg fa-brands fa-x-twitter"></i>
                     </a>
                 </div>
+                <div class="buttons wow fadeInUp" data-wow-delay="1.5s" id="buttons">
+                    <a href="https://drive.google.com/file/d/1-7B53SB7hAlxFVge3OCY-82rQe1B0UaI/view?usp=sharing" download="https://drive.google.com/file/d/1-7B53SB7hAlxFVge3OCY-82rQe1B0UaI/view?usp=sharing" class="download_cv" target="_blank">Download CV</a>
+                    <a href="https://github.com/OussemaJbeli" class="works" target="_blank">view my works</a>
+                </div>
             </div>
             <!-- pictur -->
             <div class="pictur_panel">
@@ -75,16 +100,16 @@
             <div class="face about_me" id="about_me">
                 <div class="picture" id="profile_pict"></div>
                 <div class="discription">
-                    <div class="title" id="profile_title">
+                    <div class="title wow fadeInUp" data-wow-delay="0.2s" id="profile_title">
                         <p>About </p>
                         <p class="me"> Me</p>
                     </div>
                     <div class="under_disq">
-                        <p class="multitext_profile"></p>
-                        <p class="paragraph_desc">
-                            Hello! My name is Oussema i'm 20 years old. I'm a Web and Desktop Application Developer, A YouTub content creator, and a Designer, 
+                        <p class="multitext_profile wow fadeInUp" data-wow-delay="0.5s"></p>
+                        <p class="paragraph_desc wow fadeInUp" data-wow-delay="1s">
+                            Hello! My name is Oussema i'm 21 years old. I'm a Web and Desktop Application Developer, A YouTub content creator, and a Designer, 
                             I love sharing my experience with others, And I also love to learn something new every single day. </p>
-                        <div class="buttons">
+                        <div class="buttons wow fadeInUp" data-wow-delay="1.5s">
                             <a href="https://drive.google.com/file/d/1-7B53SB7hAlxFVge3OCY-82rQe1B0UaI/view?usp=sharing" download="https://drive.google.com/file/d/1-7B53SB7hAlxFVge3OCY-82rQe1B0UaI/view?usp=sharing" class="download_cv" target="_blank">Download CV</a>
                         </div>
                     </div>
@@ -92,13 +117,13 @@
                 <p class="key" id="scroll_down"></p>
             </div>
             <div class="face experience" id="experience">
-                <i class="fa-solid fa-graduation-cap picture" id="education_pict"></i>
+                <i class="fa-solid fa-graduation-cap picture wow fadeInUp" data-wow-delay="0.5s" id="education_pict"></i>
                 <div class="discription">
-                    <div class="title" id="profile_title">
+                    <div class="title wow fadeInUp" data-wow-delay="1s" id="profile_title">
                         <p>EDUCATION</p>
                     </div>
-                    <p class="paragraph_desc">Explore my academic journey and the knowledge foundation that has shaped my expertise.</p>
-                    <div class="cards">
+                    <p class="paragraph_desc wow fadeInUp" data-wow-delay="1s">Explore my academic journey and the knowledge foundation that has shaped my expertise.</p>
+                    <div class="cards wow fadeInUp" data-wow-delay="1.5s">
                         <div class="card">
                             <p class="year">2021</p>
                             <p class="education">Baccalaureate in technical science</p>
@@ -122,25 +147,23 @@
             <div class="skils_corner2"></div>
             <!-- web -->
             <div class="skils_panel_web skils_panel" id="skils_panel_web">
-                <p class="skils_title">
+                <p class="skils_title wow fadeInUp" data-wow-delay="0.5s">
                     <span class="icon_web icon"></span>
                     <span class="title">web development</span>
                 </p>
-                <div class="skils_disk" >
+                <div class="skils_disk wow fadeInUp" data-wow-delay="1s">
                     <p class="paragraph_desc" id="paragraph_desc_web">
                         The main area of my expertise in front-end development
-                        is HTML, CSS, JS,(BOOTSTRAP)...
+                        is HTML, CSS, JS, SASS, TAILWINDCSS
                         building small and medium web apps with 
                         custom plugins, features, animations, and coding interactive
                         layouts.
                         I have also back-end development experience with PHP
                         (Laravel)
                     </p>
-                    <div class="skils_element">
-                        <p class="skils_words word" id="skils_words"></p>
-                    </div>
+                    <p class="skils_words word"></p>
                 </div>
-                <div class="second_skils_model" id="second_skils_web">
+                <div class="second_skils_model wow fadeInUp" data-wow-delay="1.5s" id="second_skils_web">
                     <div class="skill"><h3>HTML</h3><div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div></div>
                     <div class="skill"><h3>CSS</h3><div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div></div>
                     <div class="skill"><h3>JAVASCRIPT</h3><div class="skill-bar"><div class="skill-progress" style="width: 50%;"></div></div></div>
@@ -158,21 +181,19 @@
             </div>
             <!-- desktop -->
             <div class="skils_panel_desktop skils_panel" id="skils_panel_desktop">
-                <p class="skils_title revers">
+                <p class="skils_title revers wow fadeInUp" data-wow-delay="0.5s">
                     <span class="icon_desk icon"></span>
                     <span class="title">Desktop development</span>
                 </p>
-                <div class="skils_disk">
+                <div class="skils_disk wow fadeInUp" data-wow-delay="1s">
                     <p class="paragraph_desc" id="paragraph_desc_desktop">
                         My expertise in Desktop development
                         is developing software applications for desktop and server operating systems
                         using JavaFX and Java Swing
                     </p>
-                    <div class="skils_element">
-                        <p class="skils_words_decktop word" id="skils_words_decktop"></p>
-                    </div>
+                    <p class="skils_words_decktop word"></p>
                 </div>
-                <div class="second_skils_model" id="second_skils_deskktop">
+                <div class="second_skils_model wow fadeInUp" data-wow-delay="1.5s" id="second_skils_deskktop">
                     <div class="skill"><h3>JAVAFX</h3><div class="skill-bar"><div class="skill-progress" style="width: 60%;"></div></div></div>
                     <div class="skill"><h3>SWING</h3><div class="skill-bar"><div class="skill-progress" style="width: 70%;"></div></div></div>
                     <div class="skill"><h3>MONGODB</h3><div class="skill-bar"><div class="skill-progress" style="width: 50%;"></div></div></div>
@@ -191,22 +212,20 @@
             </div>
             <!-- media_creator -->
             <div class="skils_panel_media skils_panel" id="skils_panel_media">
-                <p class="skils_title">
+                <p class="skils_title wow fadeInUp" data-wow-delay="0.5s">
                     <span class="icon_media icon"></span>
                     <span class="title">gaming & media editing</span>
                 </p>
-                <div class="skils_disk">
+                <div class="skils_disk wow fadeInUp" data-wow-delay="1s">
                     <p class="paragraph_desc" id="paragraph_desc_media">
                         I have also expertise in the content creator
                         are create and edit AMV videos, record gaming videos and create 3d objects
                         using Adobe Premiere, Filmora, Adobe Photoshop...
                         Unity, Blender, Unreal Engine 5...
                     </p>
-                    <div class="skils_element">
-                        <p class="skils_words_media word" id="skils_words_media"></p>
-                    </div>
+                    <p class="skils_words_media word"></p>
                 </div>
-                <div class="second_skils_model" id="second_skils_media">
+                <div class="second_skils_model wow fadeInUp" data-wow-delay="1.5s" id="second_skils_media">
                     <div class="skill"><h3>ADOBE PREMIER</h3><div class="skill-bar"><div class="skill-progress" style="width: 60%;"></div></div></div>
                     <div class="skill"><h3>ADOBE PHOTOSHOP</h3><div class="skill-bar"><div class="skill-progress" style="width: 70%;"></div></div></div>
                     <div class="skill"><h3>ADOBE AFTER EFFECTS</h3><div class="skill-bar"><div class="skill-progress" style="width: 20%;"></div></div></div>
@@ -238,7 +257,7 @@
                         </div>
                     </div>
                     <div class="cards_web ender_panel_projects">
-                        <div class="cards">
+                        <div class="cards wow fadeInUp" data-wow-delay="0.5s">
                             <div class="card">
                                 <div class="trans_hiegth">
                                     <img src="icons/prjects/web/fitnes.png" alt="">
@@ -346,7 +365,7 @@
                 <!-- desktop -->
                 <div class="desktop_panel panel_projects" id="desk_pro" style="transform: rotateZ(-90deg);">
                     <div class="card_desktops ender_panel_projects">
-                        <div class="cards">
+                        <div class="cards wow fadeInUp" data-wow-delay="0.5s">
                             <div class="card">
                                 <div class="trans_hiegth">
                                     <img src="icons/prjects/desktop/crud.png" alt="">
@@ -401,7 +420,7 @@
                 <!-- media -->
                 <div class="media_panel panel_projects" id="media_pro" style="transform: rotateZ(-180deg);">
                     <div class="cards_media ender_panel_projects">
-                        <div class="cards">
+                        <div class="cards wow fadeInUp" data-wow-delay="0.5s">
                             <div class="card">
                                 <div class="trans_hiegth">
                                     <img src="icons/prjects/media/bleach AMV.jpg" alt="">
@@ -483,8 +502,8 @@
         </div>
         <!-- ***************************************contact -->
         <div class="panel contact" id="contact_panel">
-            <p class="title">LET'S WORK TOGETHER</p>
-            <div class="contain">
+            <p class="title wow fadeInUp" data-wow-delay="0.5s">LET'S WORK TOGETHER</p>
+            <div class="contain wow fadeInUp" data-wow-delay="0.5s">
                 <div class="cards">
                     <div class="card">
                         <i class="fa-solid fa-phone"></i>
@@ -504,7 +523,7 @@
                     <button class="butt" type="submit">Send</button>
                 </form>
             </div>
-            <div class="contact_icons">
+            <div class="contact_icons wow fadeInUp" data-wow-delay="0.5s">
                 <p>Copyrith @<span><a id="Copyrith">Jbeli Oussema</a></span></p>
                 <div class="media_logos" id="media_logos">
                     <a href="https://www.linkedin.com/in/jbeli-oussema-235787253/" class="socialContainer containerOne" target="_blank">
@@ -547,4 +566,18 @@
 <script src="script/script_skils.js"></script>
 <script src="script/script_projects.js"></script>
 <script src="script/script_ball_ward.js"></script>
+<!-- animation -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/typed/typed.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
 </html>
+<script>
+    new WOW().init();
+</script>

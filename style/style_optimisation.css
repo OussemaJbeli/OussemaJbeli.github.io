@@ -1,37 +1,27 @@
 @media (max-width:1300px){
     /* *********home */
     .hello{
-        font-size: 30px;
+        font-size: 19px;
     }
     .Im{
         font-size: 42px;
     }
     .multitext{
-        font-size: 60px;
+        font-size: 38px;
     }
-    .buttons{
-        width: 70%;
+    .smalldesc{
+        font-size: 17px;
+        font-family: var(--main_font);
+        color: #ffffff;
     }
     /* *******profile */
     .profile .discription .paragraph_desc{
-        font-size: 20px;
+        font-size: 17px;
     }
     /*********skils***/
-    .skils_panel .skils_disk{
-        width: 100%;
-    }
     .skils_panel .skils_title .icon{
         width: 90px;
         height: 90px;
-    }
-    .skils_panel .skils_title .title{
-        font-size: 30px;
-    }
-    .skils_panel .skils_disk .paragraph_desc{
-        width: 60%;
-        font-size: 20px;
-        padding-left: 5%;
-        padding-right: 20%;
     }
     .second_skils_model{
         display: none;
@@ -49,27 +39,25 @@
 @media (max-width:1200px){
     /* *********home */
     .hello{
-        font-size: 32px;
+        font-size: 19px;
     }
     .Im{
-        font-size: 44px;
+        font-size: 42px;
     }
     .multitext{
-        font-size: 62px;
+        font-size: 38px;
     }
-    .buttons{
-        width: 75%;
-    }
-    /* *******profile */
-    .profile .discription .paragraph_desc{
-        font-size: 20px;
+    .smalldesc{
+        font-size: 17px;
+        font-family: var(--main_font);
+        color: #ffffff;
     }
     /*********skils***/
     .skils_panel .skils_disk .skils_title{
         font-size: 28px;
     }
     .skils_panel .skils_disk  .paragraph_desc{
-        font-size: 20px;
+        font-size: 17px;
     }
     .tagcloud {
         font-family:var(--main_font);
@@ -84,16 +72,18 @@
 @media (max-width:1130px){
     /* *********home */
     .hello{
-        font-size: 28px;
+        font-size: 19px;
     }
     .Im{
-        font-size: 40px;
+        font-size: 42px;
     }
     .multitext{
-        font-size: 60px;
+        font-size: 38px;
     }
-    .buttons{
-        width: 80%;
+    .smalldesc{
+        font-size: 17px;
+        font-family: var(--main_font);
+        color: #ffffff;
     }
     /*********skils***/
     .skils_panel .skils_disk .skils_title{
@@ -103,7 +93,7 @@
         font-size: 20px;
     }
     .skils_panel .skils_disk  .paragraph_desc{
-        font-size: 18px;
+        font-size: 17px;
     }
     .tagcloud {
         font-family:var(--main_font);
@@ -116,22 +106,14 @@
     }
 }
 @media (max-width:1030px){
-    /* *********home */
-    .hello{
-        font-size: 28px;
+    .buttons a{
+        font-weight: 500;
+        font-size: 15px;
     }
-    .Im{
-        font-size: 35px;
-    }
-    .multitext{
-        font-size: 50px;
-    }
-    .buttons{
-        width: 90%;
-    }
-    .media_logos::after{
-        width: 80%;
-    }
+    .socialContainer {
+        width: 35px;
+        height: 35px;
+      }
     /*********skils***/
     .skils_panel{
         flex-direction: column;
@@ -148,7 +130,7 @@
         font-size: 25px;
     }
     .skils_panel .skils_disk  .paragraph_desc{
-        font-size: 20px;
+        font-size: 17px;
     }
     @keyframes opne_boll{
         100%{
@@ -176,34 +158,13 @@
     }
 }
 @media (max-width:900px){
-    /* *********home */
-    .hello{
-        font-size: 28px;
-    }
-    .Im{
-        font-size: 32px;
-    }
-    .multitext{
-        font-size: 50px;
-    }
-    .buttons{
-        height: 20%;
-        flex-direction: column;
-        align-items: start;
-    }
-    .buttons a{
-        width: 170px;
-        height: 45%;
-    }
-    .buttons::after{
-        height: 100%;
-    }
-    .media_logos::after{
-        width: 100%;
-    }
     /* *******profile */
     .profile .discription .paragraph_desc{
         font-size: 17px;
+    }
+    .face .picture{
+        height: 200px;
+        width: 200px;
     }
     /*********skils***/
         .skils_panel{
@@ -222,12 +183,9 @@
             display: block;
         }
         .skils_panel .skils_disk .paragraph_desc{
-            width: 90%;
+            width: 100%;
             font-size: 20px;
             text-align: justify;
-        }
-        #next,#next2{
-            left: 90%;
         }
         #previews,#previews1{
             left: 5%;
@@ -300,10 +258,6 @@
 }
 @media (max-width:760px){
     /*****profile**********/
-    .key{
-        top: 10%;
-        left: 90%;
-    }
     .profile .face{
         justify-content: center;
         flex-direction: column;
@@ -316,25 +270,29 @@
     }
     /*pictur*/
     #education_pict{
-        font-size: 150px;
-        height: 200px;
-        width: 200px; 
+        font-size: 70px;
+        height: 150px;
+        width: 150px; 
         margin-bottom: 50px;
     }
     #profile_pict{
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
         margin-right: 0;
+        margin-bottom: 30px;
     }
     #experience .cards{
         flex-direction: column;
         height: 500px;
     }
     #experience .cards .card{
+        padding: 10px 0;
         width: 100%;
-        height: 30%;
         margin-top: 10px;
         justify-content: space-between;
+    }
+    #experience .cards .card .year{
+        margin-bottom: 5px;
     }
     #experience .cards .card p{
         font-size: 15px;
@@ -353,16 +311,12 @@
     }
     /* profile info */
 .profile .discription{
-    height: 40%;
     width: 90%;
     padding-left: 0;
     flex-direction: column;
     align-items: center;
 }
 /* title */
-#about_me .title{
-    width: 160px;
-}
 #experience .title p{
     font-size: 30px;
     margin: 10px 0;
@@ -388,13 +342,12 @@
     font-size: 15px;
 }
 .profile .discription .under_disq .buttons{
-    height: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .profile .discription .under_disq .buttons a{
-    height: 100%;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -406,6 +359,7 @@
     }
     .skils_panel .skils_title{
         height: 20%;
+        flex-direction: column;
     }
     .skils_panel .skils_title .icon{
         width: 80px;
@@ -416,12 +370,8 @@
         display: block;
     }
     .skils_panel .skils_disk .paragraph_desc{
-        width: 90%;
-        font-size: 20px;
+        font-size: 17px;
         text-align: center;
-    }
-    #next,#next2{
-        left: 90%;
     }
     #previews,#previews1{
         left: 5%;
@@ -456,33 +406,38 @@
     /**contact**/
     .contact .contact_icons p{
         font-size: 18px;
-    }
-    .contact .contact_icons p a{
-        color: var(--main_font_color2);
-    }
-    .contact .contact_icons .media_logos{
-        width: 200px;
-        height: 100%;
+        width: auto;
     }
     .contact .title{
-        font-size: 40px;
+        font-size: 30px;
     }
     .contact .contain .cards .card{
-        width: 200px;
-        margin: 0 20px;
+        width: 80%;
+        margin: 5px;
     }
     .contact .contain form .information .holder{
-        width: 200px;
-        margin: 10px 20px;
+        width: 80%;
+        margin: 5px;
     }
     .contact .contain form .text{
-        width: 440px;
+        width: 80%;
+        margin: 5px;
+    }
+    .second_skils_model{
+        margin-top: 20px;
     }
 }
 @media (max-width:650px){
     /* *********home */
     .nav_bar ul{
         width: 400px;
+    }
+    .nav_bar li{
+        height: 25px;
+        width: 25px;
+    }
+    .nav_bar li i{
+        font-size: 20px;
     }
     .home{
         flex-direction: column-reverse;
@@ -501,24 +456,30 @@
     .details{
         width: 100%;
         height: 60%;
+        align-items: center;
+        padding: 0;
+    }
+    .smalldesc{
+        text-align: center;
+        padding: 10px;
+    }
+    .discription{
+        align-items: center;
     }
     .hello{
-        font-size: 25px;
+        font-size: 20px;
     }
     .Im{
-        font-size: 26px;
+        font-size: 30px;
     }
     .multitext{
-        font-size: 45px;
-    }
-    .buttons{
-        height: 30%;
-        width: 400px;
-        flex-direction: row;
+        font-size: 25px;
+        height: 20px;
     }
     .buttons a{
-        width: 170px;
-        height: 50%;
+        height: 40px;
+        font-weight: 500;
+        font-size: 15px;
     }
     /*skils*/
     .skils_panel{
@@ -552,24 +513,28 @@
     }
     .second_skils_model{
         justify-content: center;
+        margin-top: 20px;
     }
     /**contact**/
     .contact .title{
-        font-size: 37px;
+        font-size: 25px;
         text-align: center;
     }
     .contact .contact_icons p{
         font-size: 16px;
     }
-    .contact .contact_icons .media_logos{
-        width: 150px;
-        justify-content: space-around;
-    }
     .contact .contact_icons .media_logos a{
-        height: 50%;
+        height: 25px;
+        width: 25px;
     }
 }
 @media (max-width:550px){
+    body{
+        cursor: auto;
+    }
+    .cursor{
+        display: none;
+    }
     /*********projects*****/
     .web_panel .corner_projects{
         width: 60vw;
@@ -647,20 +612,15 @@
     .contact .contain form .text{
         width: 100%;
     }
+    .contact .contact_icons{
+        flex-direction: column;
+    }
     .contact .contact_icons p{
-        height: 100%;
-        width: 200px;
-        font-size: 12px;
-    }
-    .contact .contact_icons p a{
-        color: var(--main_font_color1);
-    }
-    .contact_media{
-        width: 175px;
+        font-size: 15px;
     }
     .contact_media a{
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
     }
     /****key_page***********/
     #previews_project1{
@@ -680,9 +640,9 @@
     }
 }
 @media (max-width:450px){
-    .frame{
+    /* .frame{
         height: 80%;
-    }
+    } */
     /* *********home */
     .nav_bar ul{
         width: 300px;
@@ -704,12 +664,6 @@
         width: 100%;
         flex-direction: row;
         justify-content: space-around;
-    }
-    .buttons a{
-        width: 40%;
-        height: 40%;
-        font-size: 15px;
-        text-align: center;
     }
     .media_logos{
         width: 100%;
@@ -802,9 +756,6 @@
     margin-top: 20px;
 }
     /*********skils***/
-    #next,#next2{
-        left: 90%;
-    }
     #previews,#previews1{
         left: 5%;
     }
@@ -885,12 +836,6 @@
 }
 @media (max-width:370px){
     /*********skils***/
-    #next,#next2{
-        left: 90%;
-    }
-    #previews,#previews1{
-        left: 5%;
-    }
     .skils_panel{
         padding: 30px 0;
         overflow-y: scroll;

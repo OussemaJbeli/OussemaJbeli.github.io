@@ -15,6 +15,8 @@ li{
     --main_color3:#ffffff;
     
     --main_font:sans-serif;
+    --main_font:"PT Mono", monospace;
+    --main_font:"Source Code Pro", monospace;
 
     --main_font_color1:#ffc502;
     --main_font_color2:#fff;
@@ -160,47 +162,49 @@ body{
 }
 /*******disk*****/
 .discription{
-    width: 80%;
-    height: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    margin-bottom: 10px;
 }
 .hello{
     position: relative;
     font-family: var(--main_font);
-    font-size: 30px;
+    font-size: 20px;
     color: var(--main_font_color4);
 }
 .Im{
     position: relative;
     font-family: var(--main_font);
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 900;
     color: var(--main_font_color2);
 }
 .multitext{
     position: relative;
-    height: 20%;
+    height: 60px;
     font-family: var(--main_font);
-    font-size: 68px;
+    font-size: 40px;
     font-weight: 900;
     font-family: var(--main_font);
     color: var(--main_font_color1);
 }
+/*  */
+.smalldesc{
+    font-size: 18px;
+    font-family: var(--main_font);
+    color: #ffffff;
+}
 /*******buttons*****/
 .buttons{
+    margin: 10px 0;
     position: relative;
-    width: 60%;
-    height: 20%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
 }
 .buttons a{
-    width: 170px;
-    height: 40%;
-    border-radius: 25px;
+    margin-right: 10px;
+    height: 50px;
+    border-radius: 10px;
     border-style: solid;
     border-color: var(--main_color1);
     background-color: var(--main_color2);
@@ -257,7 +261,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 25px 0;
+    padding: 10px 0;
     gap: 20px;
   }
   

@@ -52,8 +52,8 @@
 }
 .key{
     position: absolute;
-    top: 40%;
-    left: 95%;
+    top: 15px;
+    right: 15px;
     height: 40px;
     width: 40px;
     border-style: solid;
@@ -87,6 +87,7 @@
 }
 /************about_me********************/
 #about_me{
+    position: relative;
     top: 10%;
     transform: rotateZ(0deg);
     transform-origin: 0 50%;
@@ -141,8 +142,8 @@
 }
 #about_me .title p{
     font-family: var(--main_font);
-    font-size: 35px;
-    font-weight: 900;
+    font-size: 30px;
+    font-weight: 700;
     color: var(--main_font_color2);
 }
 #about_me .title .me{
@@ -171,16 +172,18 @@
 .profile .discription .paragraph_desc{
     position: relative;
     max-width: 100%;
-    font-size: 20px;
+    font-size: 17px;
     color:var(--main_font_color2);
     display: flex;
     align-items: center;
     line-height: 1.8;
+    font-family: var(--main_font);
 }
 .profile .discription .under_disq .buttons{
     margin-top: 20px;
     height: 50px;
     display: block;
+    width: fit-content;
 }
 .profile .discription .under_disq .buttons a{
     height: 100%;
@@ -201,7 +204,7 @@
     animation:fly_icon 4s ease infinite;
 }
 #experience .title{
-    font-size: 35px;
+    font-size: 30px;
     color: var(--main_font_color1);
     font-family: var(--main_font);
     font-weight: 900;
@@ -209,16 +212,16 @@
 }
 #experience .paragraph_desc{
     margin-bottom: 10px;
+    font-size: 17px;
 }
 #experience .cards{
-    height: 60%;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: row;
 }
 #experience .cards .card{
-    height: 150px;
+    height: 100%;
     width: 150px;
     background-color: var(--main_color2);
     margin-right: 10px;
@@ -229,14 +232,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     transition: 0.4s ease;
 }
 #experience .cards .card p{
     font-size: 16px;
     color: var(--main_font_color2);
     font-family: var(--main_font);
-    height: 60%;
     text-align: center;
 }
 #experience .cards .card .year{
@@ -244,7 +245,7 @@
     font-weight: 900;
     color: var(--main_font_color1);
     font-family: var(--main_font);
-    height: 20%;
+    margin-bottom: 15px;
 }
 #experience .cards .card:hover{
     transform: scale(1.1);

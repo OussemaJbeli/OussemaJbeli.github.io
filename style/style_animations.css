@@ -172,24 +172,24 @@
 /***corner*******/
 @keyframes skils_corner1_animation{
     0%{
-        transform: translate(20%,70%) rotateZ(-30deg);
+        transform: translate(25%,75%) rotateZ(-30deg);
     }
     50%{
-        transform: translate(25%,72%) rotateZ(-30deg);
+        transform: translate(30%,80%) rotateZ(-30deg);
     }
     100%{
-        transform: translate(20%,70%) rotateZ(-30deg);
+        transform: translate(25%,75%) rotateZ(-30deg);
     }
 }
 @keyframes skils_corner2_animation{
     0%{
-        transform: translate(-20%,70%) rotateZ(30deg);
+        transform: translate(-25%,75%) rotateZ(30deg);
     }
     50%{
-        transform: translate(-25%,72%) rotateZ(30deg);
+        transform: translate(-30%,80%) rotateZ(30deg);
     }
     100%{
-        transform: translate(-20%,70%) rotateZ(30deg);
+        transform: translate(-25%,75%) rotateZ(30deg);
     }
 }
 /**************projects***************************************************/
