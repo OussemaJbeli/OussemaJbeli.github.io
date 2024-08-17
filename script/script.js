@@ -1,3 +1,23 @@
+const cursor = document.querySelector('.cursor');
+document.addEventListener('mousemove', (e)=>{
+    cursor.style.left = e.pageX + 'px';
+    cursor.style.top = e.pageY + 'px';
+});
+
+new WOW().init();
+
+const listItems = document.querySelectorAll('li,a');
+
+listItems.forEach(listItem => {
+    listItem.addEventListener('mouseover', () => {
+        cursor.style.transform = 'scale(2)';
+    });
+    listItem.addEventListener('mouseout', () => {
+        cursor.style.transform = 'translate(-50%, -50%)';
+    });
+});
+
+
 let buttons = document.querySelectorAll(".nav_font");
 let load_page = document.getElementById("load_page");
 let nav_bar = document.getElementById("nav_bar");

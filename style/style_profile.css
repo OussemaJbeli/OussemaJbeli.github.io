@@ -64,7 +64,7 @@
     background-position: 100% 0%;
     background-repeat: no-repeat;
     animation: key_animation 2s ease infinite;
-    cursor: pointer;
+    cursor: none;
 }
 #scroll_down{
     background-image: url(../icons/profile/key.png);
