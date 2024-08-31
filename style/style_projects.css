@@ -258,16 +258,11 @@
 /****key_page***********/
 #previews_project1{
     top: 90%;
-    left: 85%;
     background-image: url(../icons/prjects/key.png);
 }
-#next_project2,#next_project1{
+#next_project1{
     top: 90%;
     background-image: url(../icons/prjects/key\ 2.png);
-}
-#previews_project2{
-    top: 90%;
-    background-image: url(../icons/prjects/key.png);
 }
 .projects_titlesecond{
     display: none;

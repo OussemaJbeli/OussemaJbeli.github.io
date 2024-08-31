@@ -40,7 +40,7 @@ let profile_pict = document.getElementById("profile_pict");
 profile_pict.style.animation="fly_icon 4s ease infinite";
 /****multitext*** */
 var typingEffect = new Typed(".multitext_profile",{
-    strings:["Developper","Youtuber","Designer"],
+    strings:["full-stack developer","graphic designer"],
     loop : true,
     typeSpeed: 100,
     backSpeed : 80,

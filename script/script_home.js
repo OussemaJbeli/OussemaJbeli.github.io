@@ -8,7 +8,7 @@ setInterval(() => {
 }, 2000);
 /****multitext*** */
 var typingEffect = new Typed(".multitext",{
-    strings:["Developper","Youtuber","Designer"],
+    strings:["FULL-STACK DEVELOPER","GRAPHIC DESIGNER"],
     loop : true,
     typeSpeed: 100,
     backSpeed : 80,
